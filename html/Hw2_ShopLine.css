@@ -502,6 +502,7 @@ body{
     opacity: 0.5;
     right: 50px;
     bottom: 50px;
+    cursor: pointer;
 }
 .chat button img{
     width: 50%;
