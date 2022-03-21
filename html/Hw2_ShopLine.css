@@ -220,7 +220,7 @@ body{
 .row .text .list div::before{
     content: "\2714";
     color: blue;
-    background-color: 	#91d3fc;
+    background-color: 	#87cffc;
     border-radius: 50%;
     padding: 3px;
     width: 5px;
