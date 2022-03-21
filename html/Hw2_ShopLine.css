@@ -255,11 +255,9 @@ body{
 .moreservice{
     background-color: #F5F5F5;
 }
-.wrap{
+.moreservice .wrap{
     width: 1200px;
     margin: auto;
-}
-.moreservice .wrap{
     display: flex;
     flex-wrap: wrap;
 }
