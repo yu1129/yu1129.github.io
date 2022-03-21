@@ -193,6 +193,8 @@ body{
 .row {
     display: flex;
     /* flex-wrap: wrap; */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
     margin-bottom: 50px;
 }
 .row .pic {
@@ -244,6 +246,9 @@ body{
 }
 .row:nth-child(2n - 1) {
     flex-direction: row-reverse;
+}
+.row:nth-child(4){
+    border: none;
 }
 
 /* moreservice */
