@@ -255,6 +255,7 @@ body{
 
 /* moreservice */
 .moreservice{
+    width: 100%;
     background-color: #F5F5F5;
 }
 .moreservice .wrap{
@@ -306,7 +307,7 @@ body{
 }
 .recommend .part .item img{
     width: 180px;
-    height: 60px;
+    height: 80px;
     margin: 50px 5px;
 }
 .recommend .part .item .special{
@@ -347,16 +348,13 @@ body{
 }
 
 /* end */
-.world{
-    width: 100%;
-    background-color: #032249;
-}
 .end{
-    width: 1200px;
+    width: 100%;
     height: 490px;
     margin: auto;
     display: flex;
     /* flex-wrap: wrap; */
+    background-color: #032249;
 }
 .end .pic{
     width: 600px;
@@ -392,27 +390,29 @@ body{
 }
 
 /* footer-top */
-.footer{
-    width: 100%;
-    background-color: #00142d;
-}
 .footer-top{
-    width: 1200px;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    background-color: #00142d;
+}
+.footer-top .divider{
+    width: 100%;
+    margin: 0px 100px;
+
 }
 .footer-top hr{
     background-color: gray;
     border: none;
-    width: 1160px;
+    width: 1300px;
     height: 1px;
     margin: 30px 20px;
 }
 .footer-top .menu{
-    width: 132px;
-    margin: 5px 5px 20px 50px;
-    margin-right: -45px;
+    width: 150px;
+    margin: 5px 5px 20px 150px;
+    margin-right: -140px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -439,7 +439,7 @@ body{
 
 /* news */
 .news{
-    width: 1200px;
+    width: 100%;
     height: 100px;
     margin: auto;
     background-color: #00142d;
@@ -462,7 +462,7 @@ body{
 
 /* footer-bottom */
 .footer-bottom{
-    width: 1200px;
+    width: 100%;
     height: 150px;
     display: flex;
     flex-wrap: wrap;
@@ -471,10 +471,15 @@ body{
     color:white;
     padding-bottom: 30px;
 }
+.footer-bottom .divider{
+    width: 100%;
+    margin: 0px 100px;
+
+}
 .footer-bottom .divider hr{
     background-color: gray;
     border: none;
-    width: 1160px;
+    width: 1300px;
     height: 1px;
     margin: 30px 20px;
 }
