@@ -351,6 +351,7 @@ body{
 .end{
     width: 100%;
     height: 490px;
+    text-align: center;
     margin: auto;
     display: flex;
     /* flex-wrap: wrap; */
