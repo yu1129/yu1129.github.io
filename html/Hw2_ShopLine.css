@@ -217,6 +217,16 @@ body{
     margin-bottom: 30px;
     line-height: 200%;
 }
+.row .text .list div::before{
+    content: "\2714";
+    color: blue;
+    background-color: 	#87CEFA;
+    border-radius: 50%;
+    padding: 3px;
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+}
 .list{
     font-size: 17px;
     width: 700px;
