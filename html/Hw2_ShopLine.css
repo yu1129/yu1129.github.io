@@ -18,9 +18,6 @@ p{
     line-height: 200%;
     margin-bottom: 10px;
 }
-ul li{
-    list-style: none;
-}
 
 /* notice */
 .notice{
@@ -88,8 +85,9 @@ ul li{
 }
 .header .logo h1 img{
     width: 160px;
-    height: 28px;
+    height: 30px;
     margin: 20px;
+    vertical-align: middle;
 }
 .header nav{
     flex-grow: 1;
@@ -98,7 +96,7 @@ ul li{
     display: inline-block;
     text-decoration: none;
     color: black;
-    font-size: 15px;
+    font-size: 16px;
     margin: 27px 5px;
 }
 .header nav a:hover{
