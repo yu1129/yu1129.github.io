@@ -21,21 +21,25 @@ p{
 
 /* notice */
 .notice{
-    text-align: center;
     width: 100%;
     background-color: #fe7200;
+    text-align: center;
     position: fixed;
     top: 0;
     left: 0;
 }
-.notice a{
+.notice .group{
+    width: 1520px;
+    margin: auto;
+}
+.notice .group a{
     display: inline-block;
     text-decoration: none;
     font-size: 15px;
     margin: 10px;
     color: white;
 }
-.notice .close{
+.notice .group .close{
     display: inline-block;
     position: absolute;
     top: 0;
@@ -51,10 +55,14 @@ p{
     top: 35px;
     left: 0;
 }
-.header-top .section{
+.header-top .package{
+    width: 1520px;
+    margin: auto;
+}
+.header-top .package .section{
     margin: 0px 90px;
 }
-.header-top .section a{
+.header-top .package .section a{
     display: inline-block;
     text-decoration: none;
     font-size: 15px;
@@ -62,10 +70,10 @@ p{
     margin: 5px;
     color: white;
 }
-.header-top a:hover{
+.header-top .package .section a:hover{
     color: blue;
 }
-.header-top .section .icon{
+.header-top .package .section .icon{
     vertical-align: center;
     padding:  0px 15px;
     border-right: 1px white solid;
@@ -79,34 +87,38 @@ p{
     top: 70px;
     left: 0;
 }
-.header .pack{
+.header .bundle{
+    width: 1520px;
+    margin: auto;
+}
+.header .bundle .pack{
     margin: 0px 80px;
     display: flex;
 }
-.header .logo h1 img{
+.header .bundle .logo h1 img{
     width: 160px;
     height: 30px;
     margin: 20px;
     vertical-align: middle;
 }
-.header nav{
+.header .bundle nav{
     flex-grow: 1;
 }
-.header nav a{
+.header .bundle nav a{
     display: inline-block;
     text-decoration: none;
     color: black;
     font-size: 16px;
     margin: 27px 5px;
 }
-.header nav a:hover{
+.header .bundle nav a:hover{
     color: blue;
 }
-.header nav a img{
+.header .bundle nav a img{
     width: 10px;
     height: 10px;
 }
-.header .btn-try{
+.header .bundle .btn-try{
     width: 100px;
     background-color: blue;
     border-radius: 100px;
@@ -114,38 +126,40 @@ p{
     padding: 10px;
     margin: auto 100px;
 }
-.header .btn-try a{
+.header .bundle .btn-try a{
     color: white;
     text-decoration: none;
 }
-.header .btn-try a:hover{
+.header .bundle .btn-try a:hover{
     opacity: 70%;
 }
 
 /* main */
 .main{
-    width: 100%;
-    margin: auto;
     background-color: #00142d;
     color: white;
+}
+.main .wrap{
+    width: 1520px;
+    margin: auto;
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-around;
 }
-.main .text{
+.main .wrap .text{
     width: 696px;
     padding: 100px 50px 100px 100px;
     font-weight: bold;
     line-height: 150%;
 }
-.main .text .special{
+.main .wrap .text .special{
     color: #228b22;
 }
-.main .text p{
+.main .wrap .text p{
     font-weight: bold;
     margin-bottom: 50px;
 }
-.main .text input{
+.main .wrap .text input{
     width: 350px;
     height: 30px;
     color: white;
@@ -158,7 +172,7 @@ p{
     color: white;
     font-size: 18px;
 }
-.main .text a{
+.main .wrap .text a{
     display: inline-block;
     width: 100px;
     height: 18px;
@@ -171,13 +185,12 @@ p{
     font-size: 18px;
     margin-left: 10px;;
 }
-.main .text a:hover{
+.main .wrap .text a:hover{
     opacity: 70%;
 }
-.main .pic{
+.main .wrap .pic{
     width: 474px;
     padding: 100px 10px;
-    overflow: hidden;
 }
 
 /* about */
@@ -350,57 +363,64 @@ p{
 
 /* publicity */
 .publicity{
-    width: 100%;
-    height: 430px;
-    margin: auto;
     display: flex;
     /* flex-wrap: wrap; */
-    justify-content: space-around;
-    background-color: #032249;
+    /* justify-content: space-around; */
+    /* background-color: #032249; */
+    background: #032249 url("https://img.shoplineapp.com/media/image_clips/609d0f5c33fdc6001aa95da6/original.png?1620905820") no-repeat right;
+    height: 430px;
 }
-.publicity .title{
-    width: 600px;
-    margin: 100px 0px 10px 100px;
+.publicity .group{
+    width: 1520px;
+    margin: auto;
 }
-.publicity .title h2{
+.publicity .group .title{
+    width: 500px;
+    margin: 100px 0px 10px 200px;
+    padding-left: 300px;
+}
+.publicity .group .title h2{
     color: white;
     font-size: 45px;
     margin-bottom: 50px;
 }
-.publicity .thing{
+.publicity .group .title .thing{
     width: 350px;
     text-align: center;
     border-radius: 100px;
     background-color: blue;
 }
-.publicity .thing a{
+.publicity .group .title .thing a{
     display: block;
     font-size: 20px;
     color: white;
     text-decoration: none;
     padding: 10px 100px;
 }
-.publicity .thing a:hover{
+.publicity .group .title .thing a:hover{
     opacity: 70%;
 }
-.publicity .pic{
+/* .publicity .pic{
     width: 700px;
     overflow: hidden;
 }
 .publicity .pic img{
     margin: 10px 0px 0px 10px;
-}
+} */
 
 /* footer */
 .footer{
-    width: 100%;
     background-color: #00142d;
 }
-.divider, .footer .overall{
+.footer .group{
+    width: 1520px;
+    margin: auto;
+}
+.divider, .footer .group .overall{
     margin: 0px 30px;
     display: flex;
     /* flex-wrap: wrap; */
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .divider{
     padding: 15px 0px;
@@ -411,33 +431,36 @@ p{
     width: 1400px;
     height: 1px;
 }
-.footer .menu{
-    width: 110px;
+.footer .group .menu{
+    width: 150px;
     margin: 15px;
     color: white;
 }
-.footer .other{
+.footer .group .overall .special{
+    margin-left: 50px;
+}
+.footer .group .other{
     width: 220px;
 }
-.footer .menu h3{
+.footer .group .menu h3{
     margin-bottom: 20px;
     font-size: 16px;
 }
-.footer .menu a{
+.footer .group .menu a{
     font-size: 15px;
     line-height: 30px;
     color: gray;
     text-decoration: none;
 }
-.footer .menu a:hover{
+.footer .group .menu a:hover{
     color: white;
 }
-.footer .btn-news{
+.footer .group .btn-news{
     text-align: right;
     margin: 60px 30px;
     padding: 35px 0px;
 }
-.footer .btn-news a{
+.footer .group .btn-news a{
     text-decoration: none;
     color: black;
     background-color: #ccc;
@@ -445,7 +468,7 @@ p{
     padding: 10px 50px;
     margin-right: 100px;
 }
-.footer .btn-news a:hover{
+.footer .group .btn-news a:hover{
     color: white;
 }
 .bottom{
@@ -456,7 +479,7 @@ p{
     margin: 0px 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .bottom .inf, .bottom .app, .bottom .copy{
     width: 380px;
