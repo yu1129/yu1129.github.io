@@ -399,7 +399,7 @@ p{
 .divider, .footer .overall{
     margin: 0px 30px;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-around;
 }
 .divider{
