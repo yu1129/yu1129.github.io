@@ -473,7 +473,7 @@ p{
     /* justify-content: space-around; */
 }
 .bottom .inf, .bottom .app, .bottom .copy{
-    width: 380px;
+    width: 440px;
     padding: 10px;
     margin: 10px;
     text-align: center;
@@ -508,6 +508,7 @@ p{
     line-height: 150%;
     color: gray;
     text-align: center;
+    margin: 30px 10px;
 }
 
 /* chat */
