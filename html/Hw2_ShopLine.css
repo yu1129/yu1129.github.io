@@ -363,20 +363,18 @@ p{
 
 /* publicity */
 .publicity{
+    background: #032249 url("https://img.shoplineapp.com/media/image_clips/609d0f5c33fdc6001aa95da6/original.png?1620905820") no-repeat right bottom/40%;
+    height: 430px;
     display: flex;
     /* flex-wrap: wrap; */
-    /* justify-content: space-around; */
-    /* background-color: #032249; */
-    background: #032249 url("https://img.shoplineapp.com/media/image_clips/609d0f5c33fdc6001aa95da6/original.png?1620905820") no-repeat right bottom;
-    height: 430px;
 }
 .publicity .group{
-    width: 1520px;
+    width: 1000px;
     margin: auto;
 }
 .publicity .group .title{
     width: 500px;
-    margin: 100px 0px 10px 200px;
+    margin: 200px 0px 10px 200px;
     padding-left: 300px;
 }
 .publicity .group .title h2{
@@ -400,13 +398,6 @@ p{
 .publicity .group .title .thing a:hover{
     opacity: 70%;
 }
-/* .publicity .pic{
-    width: 700px;
-    overflow: hidden;
-}
-.publicity .pic img{
-    margin: 10px 0px 0px 10px;
-} */
 
 /* footer */
 .footer{
