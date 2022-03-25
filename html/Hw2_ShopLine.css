@@ -367,7 +367,7 @@ p{
     /* flex-wrap: wrap; */
     /* justify-content: space-around; */
     /* background-color: #032249; */
-    background: #032249 url("https://img.shoplineapp.com/media/image_clips/609d0f5c33fdc6001aa95da6/original.png?1620905820") no-repeat right;
+    background: #032249 url("https://img.shoplineapp.com/media/image_clips/609d0f5c33fdc6001aa95da6/original.png?1620905820") no-repeat right bottom;
     height: 430px;
 }
 .publicity .group{
