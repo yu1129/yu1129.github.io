@@ -363,7 +363,7 @@ p{
 
 /* publicity */
 .publicity{
-    background: #032249 url("https://img.shoplineapp.com/media/image_clips/609d0f5c33fdc6001aa95da6/original.png?1620905820") no-repeat right bottom/40%;
+    background: #032249 url("https://img.shoplineapp.com/media/image_clips/609d0f5c33fdc6001aa95da6/original.png?1620905820") no-repeat right bottom/ 680px 350px;
     height: 430px;
     display: flex;
     /* flex-wrap: wrap; */
