@@ -1,0 +1,134 @@
+/* 共同設定 */
+/* body{
+    background-color: aqua;
+} */
+h2{
+    font-size: 50px;
+    line-height: 200%;
+}
+h3{
+    font-size: 30px;
+    line-height: 200%;
+    margin: 10px;
+}
+h4{
+    font-size: 25px;
+    line-height: 150%;
+    color: red;
+}
+h5{
+    font-size: 20px;
+    line-height: 150%;
+    display: inline;
+    background-color: black;
+    color: white;
+}
+p{
+    font-size: 18px;
+    line-height: 150%;
+    margin: 10px;
+}
+ul li{
+    list-style: square;
+    font-size: 18px;
+    line-height: 150%;
+}
+span{
+    writing-mode: vertical-lr;
+    font-size:80px;
+}
+i{
+    font-size: 50px;
+    color: red;
+    /* background-color: white; */
+    width: 55px;
+    height: 50px;
+}
+
+.control-odd, .control-even{
+    width: 690px;
+    height: 390px;
+    position: relative;
+    margin: 200px auto 1000px;
+}
+.decorate{
+    background-color: #eeeeee;
+}
+img{
+    position: relative;
+}
+.introduce{
+    height: 370px;
+    background-color: #000000;
+    color: white;
+}
+.introduce h2{
+    height: 80px;
+    padding: 30px 10px 20px 10px;
+    background-color: #ae0014;
+}
+.innovation{
+    padding: 10px 30px;
+    background-color: #efefef;
+}
+
+/* 差異設定 */
+.control-odd a i{
+    position: relative;
+    left: 650px;
+    top: 235px;
+    z-index: 1;
+}
+.control-odd .decorate{
+    width: 500px;
+    height: 390px;
+    position: absolute;
+    top: -80px;
+    right: -50px;
+}
+.control-odd .introduce{
+    width: 350px;
+    position: absolute;
+    top: -80px;
+    left: -200px;
+}
+.control-odd .innovation{
+    width: 620px;
+    height: 290px;
+    position: absolute;
+    bottom: -340px;
+    left: -140px;
+}
+
+.control-even img{
+    left: -150px;
+}
+.control-even .introduce h2{
+    text-align: right;
+}
+.control-even a i{
+    position: relative;
+    left: -165px;
+    top: 200px;
+    z-index: 1;
+}
+.control-even .decorate{
+    width: 500px;
+    height: 420px;
+    position: absolute;
+    top: -20px;
+    right: 50px;
+}
+.control-even .introduce{
+    width: 360px;
+    position: absolute;
+    top: -80px;
+    right: -60px;
+}
+.control-even .innovation{
+    width: 680px;
+    height: 180px;
+    position: absolute;
+    bottom: -240px;
+    right: -110px;
+}
