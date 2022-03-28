@@ -71,6 +71,22 @@ img{
     padding: 10px 30px;
     background-color: #efefef;
 }
+.divider{
+    display: flex;
+    flex-wrap: wrap;
+}
+.divider h4{
+    width: 250px;
+}
+.divider hr{
+    width: 350px;
+    height: 1px;
+    margin: 15px 10px;
+    border: none;
+    background-color: red;
+    text-align: center;
+}
+
 
 /* 差異設定 */
 .control-odd a img{
@@ -131,4 +147,7 @@ img{
     position: absolute;
     bottom: -240px;
     right: -110px;
+}
+.control-even .divider hr{
+    width: 410px;
 }

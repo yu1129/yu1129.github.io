@@ -77,6 +77,21 @@ i{
 .decorate{
     background-color: #eeeeee;
 }
+.divider{
+    display: flex;
+    flex-wrap: wrap;
+}
+.divider h4{
+    width: 250px;
+}
+.divider hr{
+    width: 420px;
+    height: 1px;
+    margin: 15px 10px;
+    border: none;
+    background-color: red;
+    text-align: center;
+}
 
 /* 差異設定 */
 .control-odd .introduce{
@@ -133,4 +148,7 @@ i{
     grid-area: 13 / 4 / 19 / 17;
     /* grid-column: 4/17;
     grid-row: 13/19; */
+}
+.control-even .divider hr{
+    width: 320px;
 }
