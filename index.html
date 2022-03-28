@@ -11,10 +11,29 @@
         body{
             background: rgb(127, 255, 212) url(pic.jpg)no-repeat center top / 900px 900px;
         }
+        .root{
+            width: 1000px;
+            margin: 20px auto;
+            /* border: 1px solid red; */
+        }
+        h1{
+            margin-left: 20px;
+        }
+        .web{
+            margin-left: 60px;
+        }
+        .main{
+            margin-left: 100px;
+        }
         h1{
             font-size: 45px;
             font-weight: bold;
-            margin: 20px 100px;
+            line-height: 200%;
+        }
+        h2{
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 200%;
         }
         body ul{
             font-size: 30px;
@@ -28,25 +47,32 @@
         }
         a{
             text-decoration: none;
+            color:cornflowerblue;
+            line-height: 150%;
         }
     </style>
 </head>
 <body>
-    <h1>我的HTML作業</h1>
-    <ul class="main">
-        <li>作業一 :</li>
-        <ul class="content">
-            <li><a href="https://yu1129.github.io/html/Hw1_curriculum.html">功課表</a></li>
-        </ul>
-        <li>作業二 :</li>
-        <ul class="content">
-            <li><a href="https://yu1129.github.io/html/Hw2_ShopLine">ShopLine</a></li>
-        </ul>
-        <li>作業三 :</li>
-        <ul class="content">
-            <li><a href="https://yu1129.github.io/html/Hw3_Toyota_1.html">Toyota_position</a></li>
-            <li><a href="https://yu1129.github.io/html/Hw3_Toyota_2.html">Toyota_grid</a></li>
-        </ul>
-    </ul>
+    <div class="root">
+        <h1>我的黑客作業</h1>
+        <div class="web">
+            <h2>我的 HTML + CSS 作業</h2>
+            <ul class="main">
+                <li>作業一 :</li>
+                <ul class="content">
+                    <li><a href="https://yu1129.github.io/html/Hw1_curriculum.html">功課表</a></li>
+                </ul>
+                <li>作業二 :</li>
+                <ul class="content">
+                    <li><a href="https://yu1129.github.io/html/Hw2_ShopLine">ShopLine</a></li>
+                </ul>
+                <li>作業三 :</li>
+                <ul class="content">
+                    <li><a href="https://yu1129.github.io/html/Hw3_Toyota_1.html">Toyota_position</a></li>
+                    <li><a href="https://yu1129.github.io/html/Hw3_Toyota_2.html">Toyota_grid</a></li>
+                </ul>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
