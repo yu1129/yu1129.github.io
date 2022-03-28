@@ -31,10 +31,14 @@ p{
 ul li::before{
     content: '▪';
     font-family: 'Font Awesome 6 Free';
-    font-size: 35px;
+    font-size: 25px;
     color: red;
-    vertical-align: middle;
+    line-height: 100%;
     margin-right: 10px;
+}
+ul li{
+    margin-bottom: 5px;
+    line-height: 25px;
 }
 span{
     writing-mode: vertical-lr;
@@ -52,7 +56,7 @@ i{
     width: 950px;
     height: 800px;
     margin: 200px auto 500px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(19, 1fr);
     grid-template-rows: repeat(19, 1fr);

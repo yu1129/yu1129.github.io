@@ -31,10 +31,14 @@ p{
 ul li::before{
     content: '▪';
     font-family: 'Font Awesome 6 Free';
-    font-size: 35px;
+    font-size: 25px;
     color: red;
-    vertical-align: middle;
+    line-height: 100%;
     margin-right: 10px;
+}
+ul li{
+    margin-bottom: 5px;
+    line-height: 25px;
 }
 span{
     writing-mode: vertical-lr;
