@@ -28,28 +28,24 @@ p{
     line-height: 150%;
     margin: 10px;
 }
-ul li{
-    list-style: square;
-    font-size: 18px;
-    line-height: 150%;
+ul li::before{
+    content: '▪';
+    font-family: 'Font Awesome 6 Free';
+    font-size: 35px;
+    color: red;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 span{
     writing-mode: vertical-lr;
     font-size:80px;
-}
-i{
-    font-size: 50px;
-    color: red;
-    /* background-color: white; */
-    width: 55px;
-    height: 50px;
 }
 
 .control-odd, .control-even{
     width: 690px;
     height: 390px;
     position: relative;
-    margin: 200px auto 1000px;
+    margin: 200px auto 500px;
 }
 .decorate{
     background-color: #eeeeee;
@@ -73,7 +69,7 @@ img{
 }
 
 /* 差異設定 */
-.control-odd a i{
+.control-odd a img{
     position: relative;
     left: 650px;
     top: 235px;
@@ -106,7 +102,7 @@ img{
 .control-even .introduce h2{
     text-align: right;
 }
-.control-even a i{
+.control-even a img{
     position: relative;
     left: -165px;
     top: 200px;

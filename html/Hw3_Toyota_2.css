@@ -28,10 +28,13 @@ p{
     line-height: 150%;
     margin: 10px;
 }
-ul li{
-    list-style: square;
-    font-size: 18px;
-    line-height: 150%;
+ul li::before{
+    content: '▪';
+    font-family: 'Font Awesome 6 Free';
+    font-size: 35px;
+    color: red;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 span{
     writing-mode: vertical-lr;
@@ -48,7 +51,7 @@ i{
 .control-odd, .control-even{
     width: 950px;
     height: 800px;
-    margin: 200px auto 1000px;
+    margin: 200px auto 500px;
     border: 1px solid red;
     display: grid;
     grid-template-columns: repeat(19, 1fr);
@@ -102,7 +105,8 @@ i{
     text-align: center;
 }
 .control-even .pic{
-    grid-area: 4 / 2 / 14 / 16;
+    grid-area: 4 / 1 / 14 / 16;
+    padding-left: 20px;
     /* grid-column: 2/16;
     grid-row: 4/14; */
 }
@@ -118,7 +122,6 @@ i{
 }
 .control-even .btn-youtube{
     grid-area: 9 / 1 / 9 / 3;
-    padding-left: 35px;
     /* grid-column: 1/3;
     grid-row: 9/9; */
 }
