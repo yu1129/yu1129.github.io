@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <style>
+        .main{
+            width: 500px;
+            margin: auto;
+            border: 1px solid blue;
+            border-radius: 50px;
+        }
+        .pic{
+            width: 250px;
+            margin: 20px auto;
+        }
+        .pic img{
+            width: 250px;
+        }
+        .text{
+            width: 300px;
+            margin: auto;
+        }
+        .idol{
+            width: 400px;
+            margin: 0px 50px 0px 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .idol .item{
+            width: 100px;
+            margin: 0px 10px 0px 0px;
+        }
+        .idol img{
+            width: 100%;
+            margin: auto;
+        }
+        .special{
+            padding-top: 25px;
+        }
+        .control{
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="pic">
+            <img src="" alt="">
+        </div>
+        <div class="text">
+            <div id="name">
+                <h2></h2>
+                <p></p>
+            </div>
+            <div id="email">
+                <h2></h2>
+                <p></p>
+            </div>
+            <div id="school">
+                <h2></h2>
+                <p></p>
+            </div>
+            <div id="interest">
+                <h2></h2>
+                <p></p>
+            </div>
+            <div class="idol">
+                <div class="item">
+                    <img src="" alt="">
+                </div>
+                <div class="item">
+                    <img class="special" src="" alt="">
+                </div>
+                <div class="item">
+                    <img class="control" src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let img = document.querySelector("img");
+        let h2 = document.querySelectorAll("h2");
+        let p = document.querySelectorAll("p");
+        let ido = document.querySelectorAll(".idol img");
+
+        let picsrc = "https://raw.githubusercontent.com/yu1129/yu1129.github.io/main/JavaScript/20220329/1.jpg";
+        let title = ["姓名: ", "E-mail: ", "學校: ", "興趣: "];
+        let content = ["ooxx", "ooxx", "ooxx", "ooxx"];
+        let idolurl =[
+            "https://raw.githubusercontent.com/yu1129/yu1129.github.io/main/JavaScript/20220329/2.jpg",
+            "https://raw.githubusercontent.com/yu1129/yu1129.github.io/main/JavaScript/20220329/3.jpg",
+            "https://raw.githubusercontent.com/yu1129/yu1129.github.io/main/JavaScript/20220329/4.jpg"
+        ];
+        
+        img.setAttribute("src", picsrc);
+        title.forEach((t, index)=>{h2[index].innerText = title[index]});
+        content.forEach((t, index)=>{p[index].innerText = content[index]});
+        idolurl.forEach((t, index)=>{ido[index].setAttribute("src", idolurl[index])});
+    </script>
+</body>
+</html>
