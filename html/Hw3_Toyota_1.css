@@ -52,10 +52,11 @@ span{
     margin: 200px auto 500px;
 }
 .decorate{
-    background-color: #eeeeee;
+    background-color: #F4F4F4;
 }
 img{
     position: relative;
+    cursor: pointer;
 }
 .introduce{
     height: 370px;
@@ -87,7 +88,6 @@ img{
     text-align: center;
 }
 
-
 /* 差異設定 */
 .control-odd a img{
     position: relative;
@@ -117,14 +117,14 @@ img{
 }
 
 .control-even img{
-    left: -150px;
+    left: -185px;
 }
 .control-even .introduce h2{
     text-align: right;
 }
 .control-even a img{
     position: relative;
-    left: -165px;
+    left: -200px;
     top: 200px;
     z-index: 1;
 }
@@ -139,14 +139,14 @@ img{
     width: 360px;
     position: absolute;
     top: -80px;
-    right: -60px;
+    right: -50px;
 }
 .control-even .innovation{
     width: 680px;
     height: 180px;
     position: absolute;
     bottom: -240px;
-    right: -110px;
+    right: -50px;
 }
 .control-even .divider hr{
     width: 410px;
