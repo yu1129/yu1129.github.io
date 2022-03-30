@@ -42,19 +42,22 @@ ul li{
 }
 span{
     writing-mode: vertical-lr;
-    font-size:80px;
+    font-size: 100px;
+    line-height: 50%;
+    font-weight:lighter;
 }
 
 .control-odd, .control-even{
-    width: 690px;
-    height: 390px;
+    width: 950px;
+    height: 800px;
     position: relative;
     margin: 200px auto 500px;
-}
+    /* border: 20px solid red; */
+} 
 .decorate{
     background-color: #F4F4F4;
 }
-img{
+.main-pic{
     position: relative;
     cursor: pointer;
 }
@@ -65,7 +68,7 @@ img{
 }
 .introduce h2{
     height: 80px;
-    padding: 30px 10px 20px 10px;
+    padding: 30px 10px 40px 10px;
     background-color: #ae0014;
 }
 .innovation{
@@ -89,64 +92,83 @@ img{
 }
 
 /* 差異設定 */
-.control-odd a img{
-    position: relative;
-    left: 650px;
-    top: 235px;
-    z-index: 1;
+.control-odd span{
+    margin: 0px 30px 0px 0px;
+    text-align: left;
 }
 .control-odd .decorate{
     width: 500px;
     height: 285px;
     position: absolute;
-    top: -80px;
-    right: -50px;
+    top: 40px;
+    right: 0px;
+}
+.control-odd > a > img{
+    position: relative;
+    top: -50px;
+    left: 830px;
+    z-index: 1;
+}
+.control-odd img{
+    top: 130px;
+    left: 110px;
 }
 .control-odd .introduce{
     width: 350px;
     position: absolute;
-    top: -80px;
-    left: -200px;
+    top: 0px;
+    left: 0px;
+}
+.control-odd h2{
+    text-align: left;
 }
 .control-odd .innovation{
     width: 620px;
     height: 290px;
     position: absolute;
-    bottom: -340px;
-    left: -140px;
+    left: 50px;
+    bottom: 0px;
 }
 
-.control-even img{
-    left: -185px;
-}
-.control-even .introduce h2{
-    text-align: right;
-}
-.control-even a img{
-    position: relative;
-    left: -200px;
-    top: 200px;
-    z-index: 1;
+.control-even{
+    height: 680px;
 }
 .control-even .decorate{
     width: 500px;
-    height: 420px;
+    height: 360px;
     position: absolute;
-    top: -20px;
-    right: 50px;
+    top: 60px;
+    left: 260px;
+}
+.control-even img{
+    left: -50px;
+    top: 130px;
 }
 .control-even .introduce{
     width: 360px;
     position: absolute;
-    top: -80px;
-    right: -50px;
+    top: 0px;
+    right: 0px;
+}
+.control-even .introduce h2{
+    text-align: right;
+}
+.control-even span{
+    margin: 0px 0px 0px 30px;
+    text-align: right;
+}
+.control-even > a > img{
+    position: relative;
+    left: 0px;
+    top: -60px;
+    z-index: 1;
 }
 .control-even .innovation{
     width: 680px;
     height: 180px;
     position: absolute;
-    bottom: -240px;
-    right: -50px;
+    bottom: 00px;
+    left: 210px;
 }
 .control-even .divider hr{
     width: 410px;
