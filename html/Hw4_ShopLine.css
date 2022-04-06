@@ -301,6 +301,10 @@ hr{
     display: flex;
     flex-wrap: wrap;
 }
+.footer .md-change{
+    display: flex;
+    flex-wrap: wrap;
+}
 .bottom .inf, .bottom .app, .bottom .copy{
     font-size: 15px;
     margin-bottom: 20px;
@@ -563,6 +567,9 @@ hr{
     }
     .footer .wrap .inf, .footer .wrap .app{
         margin-left: -15px;
+    }
+    .footer .md-change{
+        flex-direction: column-reverse;
     }
     .change-language{
         padding: 20px 20px;
