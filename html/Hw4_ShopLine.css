@@ -371,7 +371,7 @@ hr{
 .col-10 { width: 83.333333%; }
 .col-11 { width: 91.666666%; }
 .col-12 { width: 100%; }
-@media screen and (max-width: 998px) {
+@media screen and (max-width: 992px) {
     body{
         padding-top: 100px;
     }
@@ -569,7 +569,7 @@ hr{
     }
     
 }
-@media screen and (min-width: 768px) and (max-width: 998px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     h2{
         font-size: 30px;
     }
@@ -606,7 +606,7 @@ hr{
     .col-md-11 { width: 91.666666%; }
     .col-md-12 { width: 100%; }
 }
-@media screen and (min-width: 998px) {
+@media screen and (min-width: 992px) {
     body{
         padding-top: 150px;
     }
