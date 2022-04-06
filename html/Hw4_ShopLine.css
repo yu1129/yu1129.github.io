@@ -388,6 +388,18 @@ hr{
     #menu-control:checked ~ .header nav{
         display: block;
     }
+    .hb::before{
+        content: '';
+        position: absolute;
+        right: 22px;
+        height: 2px;
+        width: 25px;
+        background-color: black;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        box-shadow: 0px 8px 0px black, 0px -8px 0px black;
+    }
     
     .header .wrap{
         width: 100%;
