@@ -476,7 +476,7 @@ hr{
 
     .footer .SHOPLINE, .footer .OPENSTORE, .footer .FEATURE, .footer .RESOURCE,
     .footer .CASE, .footer .OTHER, .footer .APPLICATION{
-        background-image: url("20220401/down.svg");
+        background-image: url("20220315/down.svg");
         width: 20px;
         height: 20px;
         cursor: pointer;
