@@ -123,8 +123,8 @@ a{
 }
 .row img{
     vertical-align: top;
-    width: 100%;
-    /* margin: auto; */
+    width: 93%;
+    margin: auto;
 }
 .row .text{
     padding: 30px 20px;
@@ -252,7 +252,7 @@ hr{
     padding: 50px 0;
 }
 .publicity .group .title a{
-    width: 360px;
+    /* width: 50%; */
     text-align: center;
     display: block;
     font-size: 18px;
@@ -454,6 +454,9 @@ hr{
     }
     .brand .part, .brand hr{
         display: none;
+    }
+    .publicity a{
+        width: 60%;
     }
 
     .footer .SHOPLINE, .footer .OPENSTORE, .footer .FEATURE, .footer .RESOURCE,
@@ -769,6 +772,9 @@ hr{
     }
     .brand .introd{
         flex-direction: row-reverse;
+    }
+    .publicity a{
+        width: 27.067669%;
     }
 
     .brand hr, .footer hr{
