@@ -375,6 +375,33 @@ hr{
 .col-10 { width: 83.333333%; }
 .col-11 { width: 91.666666%; }
 .col-12 { width: 100%; }
+@media screen and (max-width: 474px) {
+    /* .notice{
+        text-align: left;
+    } */
+    .footer .btn-news{
+        margin-right: 20px;
+        text-align: center;
+    }
+    .bottom .inf a, .bottom .app, .bottom .copy{
+        width: 100%;
+        text-align: center;
+    }
+    .bottom .app a{
+        margin: 0 5px;
+    }
+    .bottom .inf a{
+        border: none;
+        display: block;
+        color: white;
+    }
+
+    .main a, .publicity a{
+        width: 100%;
+        margin-top: 10px;
+        box-sizing: border-box;
+    }
+}
 @media screen and (max-width: 992px) {
     body{
         padding-top: 100px;
@@ -423,9 +450,12 @@ hr{
         height: 20px;
     }
     nav{
-        position: absolute;
         width: 100%;
+        aspect-ratio: 320/520;
+        padding: 10px;
+        box-sizing: border-box;
         background-color: #FFFFFF;
+        position: absolute;
         left: 0;
         top: 100%;
         display: none;
@@ -433,7 +463,38 @@ hr{
     nav a{
         display: block;
         color: #324255;
-        padding: 10px 20px;
+        padding: 15px 20px;
+    }
+    nav .btn-group a{
+        /* width: 100%; */
+        text-align: center;
+        color: white;
+        margin: 10px 0;
+        padding: 10px 0;
+        border: 1px solid #0061FF;
+        background-color: #0061FF;
+        border-radius: 100px;
+    }
+    nav .btn-group :last-child{
+        color: #0061FF;
+        background-color: white;
+    }
+    nav .btn-bottom{
+        padding: 10px 0;
+        background-color: #00142D;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid red;
+        display: fixed;
+        bottom: 0;
+        left: 0;
+        margin: 0 -10px;
+    }
+    nav .btn-bottom :first-child{
+        border-right: 2px solid #536074;
+        box-sizing: border-box;
     }
     nav > a > img{
         vertical-align: top;
@@ -476,7 +537,7 @@ hr{
 
     .footer .SHOPLINE, .footer .OPENSTORE, .footer .FEATURE, .footer .RESOURCE,
     .footer .CASE, .footer .OTHER, .footer .APPLICATION{
-        background-image: url("20220315/down.svg");
+        background-image: url("Hw2_ShopLine/down.svg");
         width: 20px;
         height: 20px;
         cursor: pointer;
@@ -550,6 +611,9 @@ hr{
         top: 15%;
         left: 0;
     }
+    .footer .md-change{
+        flex-direction: column-reverse;
+    }
 
 
 
@@ -567,9 +631,6 @@ hr{
     }
     .footer .wrap .inf, .footer .wrap .app{
         margin-left: -15px;
-    }
-    .footer .md-change{
-        flex-direction: column-reverse;
     }
     .change-language{
         padding: 20px 20px;
@@ -691,6 +752,12 @@ hr{
         width: 100%;
         aspect-ratio: 160/30;
         margin-top: 10px;
+    }
+    nav hr{
+        display: none;
+    }
+    nav .btn-group, nav .btn-bottom{
+        display: none;
     }
     nav{
         width: 20%;
