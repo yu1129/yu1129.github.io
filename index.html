@@ -40,10 +40,21 @@
             list-style-type: square;
             margin: 15px 150px;
         }
-        .main .content{
+        .main p{
             font-size: 20px;
-            list-style-type: upper-roman;
+            padding-left: 2em;
+            position: relative;
             margin: 10px 25px;
+        }
+        .main p::before{
+            content: '';
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            top: 0.5em;
+            left: 1em;
+            background-color: yellow;
+            border-radius: 50%;
         }
         a{
             text-decoration: none;
@@ -59,31 +70,23 @@
             <h2>我的 HTML + CSS 作業</h2>
             <ul class="main">
                 <li>作業一 :</li>
-                <ul class="content">
-                    <li><a href="https://yu1129.github.io/html/Hw1_curriculum.html">功課表</a></li>
-                </ul>
+                <p><a href="https://yu1129.github.io/html/Hw1_curriculum.html">功課表</a></p>
                 <li>作業二 :</li>
-                <ul class="content">
-                    <li><a href="https://yu1129.github.io/html/Hw2_ShopLine">ShopLine</a></li>
-                </ul>
+                <p><a href="https://yu1129.github.io/html/Hw2_ShopLine">ShopLine</a></p>
                 <li>作業三 :</li>
-                <ul class="content">
-                    <li><a href="https://yu1129.github.io/html/Hw3_Toyota_1.html">Toyota_position</a></li>
-                    <li><a href="https://yu1129.github.io/html/Hw3_Toyota_2.html">Toyota_grid</a></li>
-                </ul>
+                <p><a href="https://yu1129.github.io/html/Hw3_Toyota_1.html">Toyota_position</a></p>
+                <p><a href="https://yu1129.github.io/html/Hw3_Toyota_2.html">Toyota_grid</a></p>
                 <li>作業四 :</li>
-                <ul class="content">
-                    <li><a href="https://yu1129.github.io/html/Hw4_ShopLine.html">ShopLine_RWD</a></li>
-                </ul>
+                <p><a href="https://yu1129.github.io/html/Hw4_ShopLine.html">ShopLine_RWD</a></p>
+                <li>作業五 :</li>
+                <p><a href="https://yu1129.github.io/html/Hw5_Bootstrap.html">Bootstrap</a></p>
             </ul>
         </div>
         <div class="js">
             <h2>我的 JavaScript 作業</h2>
             <ul class="main">
                 <li>作業一 :</li>
-                <ul class="content">
-                    <li><a href="https://yu1129.github.io/JavaScript/Hw1_Information">Information</a></li>
-                </ul>
+                <p><a href="https://yu1129.github.io/JavaScript/Hw1_Information">Information</a></p>
             </ul>
         </div>
     </div>
