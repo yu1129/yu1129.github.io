@@ -12,17 +12,17 @@
     <link rel="stylesheet" href="Hw5_Bootstrap.css">
 </head>
 <body>
-    <div class="container px-lg-5">
-        <nav class="navbar navbar-expand-lg navbar-light mx-lg-auto">
-            <div class="container-fluid">
-                <a class="navbar-brand text-white p-0 me-2" href="#">
+    <div class="top">
+        <nav class="navbar navbar-expand-md navbar-light m-md-auto">
+            <div class="container-fluid px-0">
+                <a class="navbar-brand text-white p-0 mx-3" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block my-1" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-white"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
                             <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                         </li>
@@ -42,7 +42,7 @@
                             <a class="nav-link active text-white" aria-current="page" href="#">Blog</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+                    <ul class="navbar-nav app flex-row flex-wrap ms-md-auto m-md-3">
                         <li class="nav-item col-6 col-md-auto">
                             <a class="nav-link p-2 text-white" href="https://github.com/twbs" target="_blank" rel="noopener">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg d-inline-block align-text-top" viewBox="0 0 512 499.36" role="img"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"></path></svg>
@@ -68,320 +68,315 @@
                             </a>
                         </li>
                     </ul>
-                    <button class="btn btn-download" type="submit">Download</button>
+                    <button class="btn btn-download me-3" type="submit">Download</button>
                 </div>
             </div>
         </nav>
     </div>
 
-    <div class="introduce border-bottom">
-        <div class="row m-lg-auto my-lg-5">
-            <h2 class="fs-1 fw-bold mb-lg-0">Examples</h2>
-            <p class="fs-2 fw-lighter mb-lg-0">Quickly get a project started with any of our examples ranging from using parts of the framework to custom components and layouts.</p>
-            <button type="button" class="btn d-inline-block w-25 text-white fw-bold me-3">Download examples</button>
-            <button type="button" class="btn d-inline-block w-25">Download Source Code</button>
+    <div class="ex border-bottom">
+        <div class="wrap m-md-auto w-100">
+            <div class="">
+                <h2 class="fs-1 fw-bold mb-md-0">Examples</h2>
+                <p class="fs-5 fw-lighter mb-md-1">Quickly get a project started with any of our examples ranging from using parts of the framework to custom components and layouts.</p>
+                <button type="button" class="btn d-inline-block text-white fw-bold me-md-3 w-100">Download examples</button>
+                <button type="button" class="btn d-inline-block w-100">Download Source Code</button>
+            </div>
         </div>
     </div>
 
     <div class="sort">
-        <div class="row row-cols-lg-1 m-lg-auto my-lg-5">
-            <h3 class="col fs-2">Snippets</h3>
-            <p class="col special">Common patterns for building sites and apps that build on existing components and utilities with custom CSS and more.</p>
-            <div class="snippets row-cols-lg-4 d-lg-flex flex-lg-wrap justify-content-between">
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/headers.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Headers</a></h4>
-                        <p class="card-text">Display your branding, navigation, search, and more with these header components</p>
+        <div class="wrap m-auto">
+            <section>
+                <div class="content">
+                    <h3 class="fs-2 col-12">Snippets</h3>
+                    <p class="col-12">Common patterns for building sites and apps that build on existing components and utilities with custom CSS and more.</p>
+                </div>
+                <div class="snippets  d-flex flex-wrap justify-content-start">
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/headers.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Headers</a></h4>
+                            <p class="card-text fs-6 text-black-50">Display your branding, navigation, search, and more with these header components</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/heroes.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Heroes</a></h4>
+                            <p class="card-text fs-6 text-black-50">Set the stage on your homepage with heroes that feature clear calls to action.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/features.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Features</a></h4>
+                            <p class="card-text fs-6 text-black-50">Explain the features, benefits, or other details in your marketing content.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/sidebars.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Sidebars</a></h4>
+                            <p class="card-text fs-6 text-black-50">Common navigation patterns ideal for offcanvas or multi-column layouts.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/footers.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Footers</a></h4>
+                            <p class="card-text fs-6 text-black-50">Finish every page strong with an awesome footer, big or small.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/dropdowns.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Dropdowns</a></h4>
+                            <p class="card-text fs-6 text-black-50">Enhance your dropdowns with filters, icons, custom styles, and more.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/list-groups.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">List groups</a></h4>
+                            <p class="card-text fs-6 text-black-50">Extend list groups with utilities and custom styles for any content.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/modals.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Modals</a></h4>
+                            <p class="card-text fs-6 text-black-50">Transform modals to serve any purpose, from feature tours to dialogs.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/heroes.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Heroes</a></h4>
-                        <p class="card-text">Set the stage on your homepage with heroes that feature clear calls to action.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/features.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Features</a></h4>
-                        <p class="card-text">Explain the features, benefits, or other details in your marketing content.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/sidebars.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Sidebars</a></h4>
-                        <p class="card-text">Common navigation patterns ideal for offcanvas or multi-column layouts.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/footers.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Footers</a></h4>
-                        <p class="card-text">Finish every page strong with an awesome footer, big or small.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/dropdowns.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Dropdowns</a></h4>
-                        <p class="card-text">Enhance your dropdowns with filters, icons, custom styles, and more.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/list-groups.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">List groups</a></h4>
-                        <p class="card-text">Extend list groups with utilities and custom styles for any content.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/modals.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Modals</a></h4>
-                        <p class="card-text">Transform modals to serve any purpose, from feature tours to dialogs.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="row row-cols-lg-1 m-lg-auto my-lg-5">
-            <h3 class="col fs-2">Custom Components</h3>
-            <p class="col special">Brand new components and templates to help folks quickly get started with Bootstrap and demonstrate best practices for adding onto the framework.</p>
-            <div class="custom-components row-cols-lg-4 d-lg-flex flex-lg-wrap justify-content-between">
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/album.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Album</a></h4>
-                        <p class="card-text">Simple one-page template for photo galleries, portfolios, and more.</p>
+            <section>
+                <div class="content">
+                    <h3 class="fs-2 col-12">Custom Components</h3>
+                    <p class="col-12">Brand new components and templates to help folks quickly get started with Bootstrap and demonstrate best practices for adding onto the framework.</p>
+                </div>
+                <div class="custom-components  d-flex flex-wrap justify-content-start">
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/album.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Album</a></h4>
+                            <p class="card-text fs-6 text-black-50">Simple one-page template for photo galleries, portfolios, and more.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/pricing.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Pricing</a></h4>
+                            <p class="card-text fs-6 text-black-50">Example pricing page built with Cards and featuring a custom header and footer.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/checkout.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Checkout</a></h4>
+                            <p class="card-text fs-6 text-black-50">Custom checkout form showing our form components and their validation features.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/product.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Product</a></h4>
+                            <p class="card-text fs-6 text-black-50">Lean product-focused marketing page with extensive grid and image work.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/cover.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Cover</a></h4>
+                            <p class="card-text fs-6 text-black-50">A one-page template for building simple and beautiful home pages.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/carousel.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Carousel</a></h4>
+                            <p class="card-text fs-6 text-black-50">Customize the navbar and carousel, then add some new components.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/blog.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Blog</a></h4>
+                            <p class="card-text fs-6 text-black-50">Magazine like blog template with header, navigation, featured content.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/dashboard.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Dashboard</a></h4>
+                            <p class="card-text fs-6 text-black-50">Basic admin dashboard shell with fixed sidebar and navbar.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/sign-in.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Sign-in</a></h4>
+                            <p class="card-text fs-6 text-black-50">Custom form layout and design for a simple sign in form.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/sticky-footer.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Sticky footer</a></h4>
+                            <p class="card-text fs-6 text-black-50">Attach a footer to the bottom of the viewport when page content is short.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/sticky-footer-navbar.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Sticky footer navbar</a></h4>
+                            <p class="card-text fs-6 text-black-50">Attach a footer to the bottom of the viewport with a fixed top navbar.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/jumbotron.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Jumbotron</a></h4>
+                            <p class="card-text fs-6 text-black-50">Use utilities to recreate and enhance Bootstrap 4's jumbotron.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/pricing.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Pricing</a></h4>
-                        <p class="card-text">Example pricing page built with Cards and featuring a custom header and footer.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/checkout.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Checkout</a></h4>
-                        <p class="card-text">Custom checkout form showing our form components and their validation features.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/product.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Product</a></h4>
-                        <p class="card-text">Lean product-focused marketing page with extensive grid and image work.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/cover.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Cover</a></h4>
-                        <p class="card-text">A one-page template for building simple and beautiful home pages.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/carousel.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Carousel</a></h4>
-                        <p class="card-text">Customize the navbar and carousel, then add some new components.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/blog.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Blog</a></h4>
-                        <p class="card-text">Magazine like blog template with header, navigation, featured content.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/dashboard.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Dashboard</a></h4>
-                        <p class="card-text">Basic admin dashboard shell with fixed sidebar and navbar.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/sign-in.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Sign-in</a></h4>
-                        <p class="card-text">Custom form layout and design for a simple sign in form.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/sticky-footer.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Sticky footer</a></h4>
-                        <p class="card-text">Attach a footer to the bottom of the viewport when page content is short.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/sticky-footer-navbar.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Sticky footer navbar</a></h4>
-                        <p class="card-text">Attach a footer to the bottom of the viewport with a fixed top navbar.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/jumbotron.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Jumbotron</a></h4>
-                        <p class="card-text">Use utilities to recreate and enhance Bootstrap 4's jumbotron.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="row row-cols-lg-1 m-lg-auto my-lg-5">
-            <h3 class="col fs-2">Framework</h3>
-            <p class="col special">Examples that focus on implementing uses of built-in components provided by Bootstrap.</p>
-            <div class="custom-components row-cols-lg-4 d-lg-flex flex-lg-wrap">
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/starter-template.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Starter template</a></h4>
-                        <p class="card-text">Nothing but the basics: compiled CSS and JavaScript.</p>
+            <section>
+                <div class="content">
+                    <h3 class="fs-2 col-12">Framework</h3>
+                    <p class="col-12">Examples that focus on implementing uses of built-in components provided by Bootstrap.</p>
+                </div>
+                <div class="custom-components d-flex flex-wrap justify-content-start">
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/starter-template.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Starter template</a></h4>
+                            <p class="card-text fs-6 text-black-50">Nothing but the basics: compiled CSS and JavaScript.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/grid.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Grid</a></h4>
+                            <p class="card-text fs-6 text-black-50">Multiple examples of grid layouts with all four tiers, nesting, and more.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/cheatsheet.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Cheatsheet</a></h4>
+                            <p class="card-text fs-6 text-black-50">Kitchen sink of Bootstrap components.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/cheatsheet-rtl.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Cheatsheet RTL</a></h4>
+                            <p class="card-text fs-6 text-black-50">Kitchen sink of Bootstrap components, RTL.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/grid.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Grid</a></h4>
-                        <p class="card-text">Multiple examples of grid layouts with all four tiers, nesting, and more.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/cheatsheet.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Cheatsheet</a></h4>
-                        <p class="card-text">Kitchen sink of Bootstrap components.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/cheatsheet-rtl.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Cheatsheet RTL</a></h4>
-                        <p class="card-text">Kitchen sink of Bootstrap components, RTL.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/cover.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Cover</a></h4>
-                        <p class="card-text">A one-page template for building simple and beautiful home pages.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="row row-cols-lg-1 m-lg-auto my-lg-5">
-            <h3 class="col fs-2">Navbars</h3>
-            <p class="col special">Brand new components and templates to help folks quickly get started with Bootstrap and demonstrate best practices for adding onto the framework.</p>
-            <div class="nav row-cols-lg-4 d-lg-flex flex-lg-wrap">
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/navbars.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Navbars</a></h4>
-                        <p class="card-text">Demonstration of all responsive and container options for the navbar.</p>
+            <section>
+                <div class="content">
+                    <h3 class="fs-2 col">Navbars</h3>
+                    <p class="col">Taking the default navbar component and showing how it can be moved, placed, and extended.</p>
+                </div>
+                <div class="navb d-flex flex-wrap justify-content-start">
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/navbars.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Navbars</a></h4>
+                            <p class="card-text fs-6 text-black-50">Demonstration of all responsive and container options for the navbar.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/navbar-static.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Navbar static</a></h4>
+                            <p class="card-text fs-6 text-black-50">Single navbar example of a static top navbar along with some additional content.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/navbar-fixed.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Navbar fixed</a></h4>
+                            <p class="card-text fs-6 text-black-50">Single navbar example with a fixed top navbar along with some additional content.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/navbar-bottom.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Navbar bottom</a></h4>
+                            <p class="card-text fs-6 text-black-50">Single navbar example with a bottom navbar along with some additional content.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/offcanvas-navbar.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Offcanvas navbar</a></h4>
+                            <p class="card-text fs-6 text-black-50">Turn your expandable navbar into a sliding offcanvas menu (doesn't use our offcanvas component).</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/navbar-static.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Navbar static</a></h4>
-                        <p class="card-text">Single navbar example of a static top navbar along with some additional content.</p>
+            </section>
+
+            <section>
+                <div class="content">
+                    <h3 class="fs-2 col-12">RTL</h3>
+                    <p class="col-12">See Bootstrap's RTL version in action with these modified Custom Components examples.</p>
+                </div>
+                <div class="notice col-12 mb-3">
+                    <p class="m-3">The RTL feature is still experimental and will probably evolve according to user feedback. Spotted something or have an improvement to suggest? <a href="#">Open an issue</a>, we'd love to get your insights.</p>
+                </div>
+                <div class="rtl d-flex flex-wrap justify-content-start">
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/album-rtl.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Album RTL</a></h4>
+                            <p class="card-text fs-6 text-black-50">Simple one-page template for photo galleries, portfolios, and more.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/checkout-rtl.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Checkout RTL</a></h4>
+                            <p class="card-text fs-6 text-black-50">Custom checkout form showing our form components and their validation features.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/carousel-rtl.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Carousel RTL</a></h4>
+                            <p class="card-text fs-6 text-black-50">Customize the navbar and carousel, then add some new components.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/blog-rtl.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Blog RTL</a></h4>
+                            <p class="card-text fs-6 text-black-50">Magazine like blog template with header, navigation, featured content.</p>
+                        </div>
+                    </div>
+                    <div class="card col-sm-12 col-md-4 col-lg-3">
+                        <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/dashboard-rtl.png"  class="card-img-top">
+                        <div class="card-body control-size">
+                            <h4 class="card-title fs-5"><a href="#">Dashboard RTL</a></h4>
+                            <p class="card-text fs-6 text-black-50">Basic admin dashboard shell with fixed sidebar and navbar.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/navbar-fixed.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Navbar fixed</a></h4>
-                        <p class="card-text">Single navbar example with a fixed top navbar along with some additional content.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/navbar-bottom.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Navbar bottom</a></h4>
-                        <p class="card-text">Single navbar example with a bottom navbar along with some additional content.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/offcanvas-navbar.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Offcanvas navbar</a></h4>
-                        <p class="card-text">Turn your expandable navbar into a sliding offcanvas menu (doesn't use our offcanvas component).</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row row-cols-lg-1 m-lg-auto my-lg-5">
-            <h3 class="col fs-2">RTL</h3>
-            <p class="col special">See Bootstrap's RTL version in action with these modified Custom Components examples.</p>
-            <div class="notice p-lg-3 mb-lg-3">
-                <p>The RTL feature is still experimental and will probably evolve according to user feedback. Spotted something or have an improvement to suggest? <a href="#">Open an issue</a>, we'd love to get your insights.</p>
-            </div>
-            <div class="rtl row-cols-lg-4 d-lg-flex flex-lg-wrap">
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/album-rtl.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Album RTL</a></h4>
-                        <p class="card-text">Simple one-page template for photo galleries, portfolios, and more.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/checkout-rtl.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Checkout RTL</a></h4>
-                        <p class="card-text">Custom checkout form showing our form components and their validation features.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/carousel-rtl.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Carousel RTL</a></h4>
-                        <p class="card-text">Customize the navbar and carousel, then add some new components.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/blog-rtl.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Blog RTL</a></h4>
-                        <p class="card-text">Magazine like blog template with header, navigation, featured content.</p>
-                    </div>
-                </div>
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/dashboard-rtl.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Dashboard RTL</a></h4>
-                        <p class="card-text">Basic admin dashboard shell with fixed sidebar and navbar.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row row-cols-lg-1 m-lg-auto my-lg-5">
-            <h3 class="col fs-2">Integrations</h3>
-            <p class="col special">Integrations with external libraries.</p>
-            <div class="rtl row-cols-lg-4 d-lg-flex flex-lg-wrap">
-                <div class="card col px-lg-3 pb-lg-3">
-                    <img src="https://getbootstrap.com/docs/5.1/assets/img/examples/masonry.png"  class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title fs-5"><a href="#">Masonry</a></h4>
-                        <p class="card-text">Combine the powers of the Bootstrap grid and the Masonry layout.</p>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
     </div>
 
-    <div class="themes">
-        <div class="row d-flex justify-content-lg-center align-content-lg-center text-center m-auto">
+    <div class="introd border-top">
+        <div class="wrap m-auto text-center">
             <div class="
             icon masthead-followup-icon d-inline-block mb-2 text-white bg-danger p-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" focusable="false" viewBox="0 0 16 16">
@@ -389,66 +384,66 @@
                 </svg>
             </div>
             <h3 class="fs-1">Go further with Bootstrap Themes</h3>
-            <p class="mx-lg-5 fs-5 fw-light">Need something more than these examples? Take Bootstrap to the next level with premium themes from the <a href="#">official Bootstrap Themes marketplace</a>. They’re built as their own extended frameworks, rich with new components and plugins, documentation, and powerful build tools.</p>
+            <p class="mx-md-5 fs-5 fw-light">Need something more than these examples? Take Bootstrap to the next level with premium themes from the <a href="#">official Bootstrap Themes marketplace</a>. They’re built as their own extended frameworks, rich with new components and plugins, documentation, and powerful build tools.</p>
             <div class="btn-themes">
-                <button type="button" class="btn text-primary border-primary d-block m-lg-auto">Browse themes</button>
+                <button type="button" class="btn text-primary border-primary ">Browse themes</button>
             </div>
-            <div class="pic py-lg-4">
-                <img src="https://getbootstrap.com/docs/5.1/assets/img/bootstrap-themes-collage.png" alt="Browse themes">
+            <div class="pic py-md-4 w-100">
+                <img src="https://getbootstrap.com/docs/5.1/assets/img/bootstrap-themes-collage.png" alt="Browse themes" class="w-100">
             </div>
         </div>
     </div>
 
-    <div class="footer py-lg-5 pb-lg-5">
-        <div class="row m-lg-auto d-flex flex-lg-wrap justify-content-between">
-            <div class="copy me-lg-5">
+    <div class="footer">
+        <div class="wrap m-auto d-lg-flex py-5">
+            <div class="copy col-sm-12 col-lg-4">
                 <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
                     <span class="fs-5">Bootstrap</span>
                 </a>
-                <p class="mb-lg-0">Designed and built with all the love in the world by the <a href="#">Bootstrap team</a> with the help of <a href="#">our contributors</a>.</p>
-                <p class="mb-lg-0">Code licensed <a href="#">MIT</a>, docs <a href="#">CC BY 3.0.</a></p>
-                <p>Currently v5.1.3.</p>
+                <p class="mb-1 fs-6">Designed and built with all the love in the world by the <a href="#" class="text-decoration-none">Bootstrap team</a> with the help of <a href="#" class="text-decoration-none">our contributors</a>.</p>
+                <p class="mb-1 fs-6">Code licensed <a href="#" class="text-decoration-none">MIT</a>, docs <a href="#" class="text-decoration-none">CC BY 3.0.</a></p>
+                <p class="fs-6 mb-5">Currently v5.1.3.</p>
             </div>
-            <div class="group row-cols-lg-4 d-flex">
-                <div class="links col">
+            <div class="group col-sm-12 ps-lg-5 col-md-8 d-flex flex-wrap justify-content-between">
+                <div class="links col-lg-3">
                     <h5>Links</h5>
-                    <ul class="ps-lg-0">
-                        <li class="mb-lg-2"><a href="#">Home</a></li>
-                        <li class="mb-lg-2"><a href="#">Docs</a></li>
-                        <li class="mb-lg-2"><a href="#">Examples</a></li>
-                        <li class="mb-lg-2"><a href="#">Themes</a></li>
-                        <li class="mb-lg-2"><a href="#">Blog</a></li>
+                    <ul class="ps-0">
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Home</a></li>
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Docs</a></li>
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Examples</a></li>
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Themes</a></li>
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Blog</a></li>
                     </ul>
                 </div>
-                <div class="guides col">
+                <div class="guides col-lg-3">
                     <h5>Guides</h5>
-                    <ul class="ps-lg-0">
-                        <li class="mb-lg-2"><a href="#">Getting started</a></li>
-                        <li class="mb-lg-2"><a href="#">Starter template</a></li>
-                        <li class="mb-lg-2"><a href="#">Webpack</a></li>
-                        <li class="mb-lg-2"><a href="#">Parcel</a></li>
+                    <ul class="ps-0">
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Getting started</a></li>
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Starter template</a></li>
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Webpack</a></li>
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Parcel</a></li>
                     </ul>
                 </div>
-                <div class="projects col">
+                <div class="projects col-lg-3">
                     <h5>Projects</h5>
-                    <ul  class="ps-lg-0">
-                        <li class="mb-lg-2"><a href="#">Bootstrap 5</a></li>
-                        <li class="mb-lg-2"><a href="#">Boostrap 4</a></li>
-                        <li class="mb-lg-2"><a href="#">Icons</a></li>
-                        <li class="mb-lg-2"><a href="#">RFS</a></li>
-                        <li class="mb-lg-2"><a href="#">npm starter</a></li>
+                    <ul  class="ps-0">
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Bootstrap 5</a></li>
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Boostrap 4</a></li>
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Icons</a></li>
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">RFS</a></li>
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">npm starter</a></li>
                     </ul>
                 </div>
-                <div class="community col">
+                <div class="community col-lg-3">
                     <h5>Community</h5>
-                    <ul class="ps-lg-0">
-                        <li class="mb-lg-2"><a href="#">Issues</a></li>
-                        <li class="mb-lg-2"><a href="#">Discussions</a></li>
-                        <li class="mb-lg-2"><a href="#">Corporate sponsors</a></li>
-                        <li class="mb-lg-2"><a href="#">Open Collective</a></li>
-                        <li class="mb-lg-2"><a href="#">Slack</a></li>
-                        <li class="mb-lg-2"><a href="#">Stack Overflow</a></li>
+                    <ul class="ps-0">
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Issues</a></li>
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Discussions</a></li>
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Corporate sponsors</a></li>
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Open Collective</a></li>
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Slack</a></li>
+                        <li class="mb-2 list-unstyled"><a href="#" class="text-decoration-none">Stack Overflow</a></li>
                     </ul>
                 </div>
             </div>
