@@ -44,26 +44,12 @@
         function allPokemon(){
             for(let i=1; i<898; i++){
                 fileName = i.toString().padStart(3, "0");
-                let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
-
-                let img = document.createElement("img");
-                img.setAttribute("src", pathFile);
-
-                img.addEventListener("click", function(event){
-                    container.removeChild(event.target);
-                });
-                fileName=fileName;
-
-
-                container.append(img);
+                paths(fileName);
             }
         }
 
-
-        function AddPokemon(){
-            let numberString = (parseInt(fileName) + 1).toString().padStart(3, "0");
-
-            let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${numberString}.png`;
+        function paths(count){
+            let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${count}.png`;
 
             let img = document.createElement("img");
             img.setAttribute("src", pathFile);
@@ -72,8 +58,13 @@
                 container.removeChild(event.target);
                 container.append(img);
             });
-            fileName = numberString;
             container.append(img);
+            fileName = count;
+        }
+
+        function AddPokemon(){
+            let numberString = (parseInt(fileName) + 1).toString().padStart(3, "0");
+            paths(numberString);
         };
 
         function removePokemon(){
