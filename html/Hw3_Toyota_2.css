@@ -81,7 +81,7 @@ p {
 
 .group {
   width: 960px;
-  height: 800px;
+  height: 850px;
   margin: 100px auto;
   position: relative;
   display: -ms-grid;
@@ -89,7 +89,7 @@ p {
   -ms-grid-columns: (1fr)[19];
       grid-template-columns: repeat(19, 1fr);
   -ms-grid-rows: (1fr)[19];
-      grid-template-rows: repeat(19, 1fr);
+      grid-template-rows: repeat(20, 1fr);
 }
 
 .group .title {
@@ -161,7 +161,7 @@ p {
   -ms-grid-row-span: 7;
   -ms-grid-column: 1;
   -ms-grid-column-span: 15;
-  grid-area: 13 / 1 / 20 / 16;
+  grid-area: 13 / 1 / 21 / 16;
   padding: 10px;
   background-color: #F7F7F7;
 }
