@@ -1,159 +1,283 @@
-/* 共同設定 */
-/* body{
-    background-color: aqua;
-} */
-h2{
-    font-size: 50px;
-    line-height: 200%;
-}
-h3{
-    font-size: 30px;
-    line-height: 200%;
-    margin: 10px;
-}
-h4{
-    font-size: 25px;
-    line-height: 150%;
-    color: red;
-}
-h5{
-    font-size: 20px;
-    line-height: 150%;
-    display: inline;
-    background-color: black;
-    color: white;
-}
-p{
-    font-size: 18px;
-    line-height: 150%;
-    margin: 10px;
-}
-ul li::before{
-    content: '▪';
-    font-family: 'Font Awesome 6 Free';
-    font-size: 25px;
-    color: red;
-    line-height: 100%;
-    margin-right: 10px;
-}
-ul li{
-    margin-bottom: 5px;
-    line-height: 25px;
-}
-span{
-    writing-mode: vertical-lr;
-    font-size: 100px;
-    line-height: 50%;
-    font-weight:lighter;
+h3, h4, p {
+  -webkit-margin-before: unset;
+          margin-block-start: unset;
+  -webkit-margin-after: unset;
+          margin-block-end: unset;
 }
 
-.control-odd, .control-even{
-    width: 950px;
-    height: 800px;
-    margin: 200px auto 500px;
-    /* border: 1px solid red; */
-    display: grid;
-    grid-template-columns: repeat(19, 1fr);
-    grid-template-rows: repeat(19, 1fr);
-}
-.introduce h2{
-    height: 80px;
-    padding: 30px 10px 40px 10px;
-    background-color: #ae0014;
-}
-.innovation{
-    padding: 10px 30px;
-    background-color: #efefef;
-}
-.introduce{
-    background-color: #000000;
-    color: white;
-}
-.decorate{
-    background-color: #eeeeee;
-}
-.divider{
-    display: flex;
-    flex-wrap: wrap;
-}
-.divider h4{
-    width: 250px;
-}
-.divider hr{
-    width: 420px;
-    height: 1px;
-    margin: 15px 10px;
-    border: none;
-    background-color: red;
-    text-align: center;
+h3 {
+  font-size: 50px;
 }
 
-/* 差異設定 */
-.control-odd span{
-    margin: 0px 30px 0px 0px;
-    text-align: left;
-}
-.control-odd .introduce{
-    grid-area: 1 / 1 / 10 / 8;
-    /* grid-column: 1/8;
-    grid-row: 1/10; */
-}
-.control-odd .decorate{
-    grid-area: 2 / 10 / 9 / 20;
-    /* grid-column: 10/20;
-    grid-row: 2/9; */
-}
-.control-odd .pic{
-    grid-area: 4 / 5 / 14 / 19;
-    cursor: pointer;
-    /* grid-column: 5/19;
-    grid-row: 4/14; */
-}
-.control-odd .btn-youtube{
-    grid-area: 10 / 18 / 10 / 20;
-    /* grid-column: 18/20;
-    grid-row: 10/10; */
-}
-.control-odd .innovation{
-    grid-area: 13 / 1 / 20 / 16;
-    /* grid-column: 1/16;
-    grid-row: 13/20; */
+h4 {
+  font-size: 16px;
+  line-height: 200%;
+  margin-bottom: 5px;
 }
 
-.control-even .introduce h2{
-    text-align: right;
+p {
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 5px;
 }
-.control-even span{
-    margin: 0px 0px 0px 30px;
-    text-align: right;
+
+.selection {
+  width: 960px;
+  margin: 50px auto;
 }
-.control-even .pic{
-    grid-area: 4 / 1 / 14 / 16;
-    padding-left: 20px;
-    cursor: pointer;
-    /* grid-column: 2/16;
-    grid-row: 4/14; */
+
+.selection ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.control-even .introduce{
-    grid-area: 1 / 13 / 10 / 20;
-    /* grid-column: 13/20;
-    grid-row: 1/10; */
+
+.selection li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.control-even .decorate{
-    grid-area: 2 / 7 / 12 / 17;
-    /* grid-column: 7/17;
-    grid-row: 2/12; */
+
+.selection li a {
+  width: 95%;
+  text-align: center;
+  text-decoration: none;
+  line-height: 30px;
+  border: 1px solid gray;
 }
-.control-even .btn-youtube{
-    grid-area: 9 / 1 / 9 / 3;
-    /* grid-column: 1/3;
-    grid-row: 9/9; */
+
+.selection li a:first-child {
+  border: 1px dotted #000000;
+  color: transparent;
+  height: 30px;
 }
-.control-even .innovation{
-    grid-area: 13 / 4 / 19 / 17;
-    /* grid-column: 4/17;
-    grid-row: 13/19; */
+
+.selection li a:last-child {
+  color: #000000;
+  background-color: #AE0014;
+  -webkit-transition: all 0.8s 0s ease;
+  transition: all 0.8s 0s ease;
+  height: 0.1px;
+  margin-top: -1px;
 }
-.control-even .divider hr{
-    width: 320px;
+
+.selection li a:last-child div {
+  margin-top: -30px;
 }
+
+.selection li:hover a:last-child {
+  background-color: #AE0014;
+  color: #FFFFFF;
+  height: -30px;
+  margin-top: -30px;
+  padding-top: 30px;
+}
+
+.group {
+  width: 960px;
+  height: 800px;
+  margin: 100px auto;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[19];
+      grid-template-columns: repeat(19, 1fr);
+  -ms-grid-rows: (1fr)[19];
+      grid-template-rows: repeat(19, 1fr);
+}
+
+.group .title {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-area: 1 / 1 / 10 / 8;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.group .title h3 {
+  background-color: #BB0404;
+}
+
+.group .title h3 span {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin-left: -18px;
+  font-weight: lighter;
+  font-size: 110px;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.group .title .title-content {
+  padding: 20px;
+  position: absolute;
+  background-color: black;
+}
+
+.group .title .title-content h4 {
+  font-size: 25px;
+}
+
+.group .title .title-content p {
+  color: #ccc;
+  letter-spacing: 2px;
+}
+
+.group .pic {
+  display: block;
+  text-decoration: none;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 10;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 14;
+  grid-area: 4 / 5 / 14 / 19;
+}
+
+.group .btn {
+  display: block;
+  text-decoration: none;
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 18;
+  -ms-grid-column-span: 2;
+  grid-area: 9 / 18 / 10 / 20;
+}
+
+.group .content {
+  letter-spacing: 1px;
+  font-size: 15px;
+  -ms-grid-row: 13;
+  -ms-grid-row-span: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 15;
+  grid-area: 13 / 1 / 20 / 16;
+  padding: 10px;
+  background-color: #F7F7F7;
+}
+
+.group .content .slg {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #C01A1A;
+}
+
+.group .content .slg hr {
+  margin-left: 5px;
+  border: none;
+  background-color: #C01A1A;
+  height: 1px;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.group .content h4 {
+  background-color: #000000;
+  color: #FFFFFF;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.group .content p {
+  padding-left: 2em;
+  position: relative;
+}
+
+.group .content p::after {
+  content: '';
+  width: 2px;
+  height: 2px;
+  background-color: #C01A1A;
+  position: absolute;
+  left: 1em;
+  top: 0.5em;
+}
+
+.group:after {
+  content: '';
+  width: 400px;
+  height: 280px;
+  background-color: #F3F3F3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 7;
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 10;
+  grid-area: 2 / 10 / 9 / 20;
+}
+
+.group:nth-child(odd) .title {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  -ms-grid-column: 13;
+  -ms-grid-column-span: 7;
+  grid-area: 1 / 13 / 10 / 20;
+}
+
+.group:nth-child(odd) .title h3 {
+  text-align: right;
+}
+
+.group:nth-child(odd) .title h3 span {
+  margin-left: 10px;
+  margin-right: -18px;
+}
+
+.group:nth-child(odd) .pic {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 10;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 15;
+  grid-area: 4 / 1 / 14 / 16;
+  margin-left: 10px;
+}
+
+.group:nth-child(odd) .btn {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 9 / 1 / 9 / 3;
+}
+
+.group:nth-child(odd) .content {
+  -ms-grid-row: 13;
+  -ms-grid-row-span: 6;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 13;
+  grid-area: 13 / 4 / 19 / 17;
+}
+
+.group:nth-child(odd):after {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 10;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 10;
+  grid-area: 2 / 7 / 12 / 17;
+}
+/*# sourceMappingURL=20220325_2.css.map */
