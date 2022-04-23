@@ -16,12 +16,10 @@
             margin: 20px auto;
             display: flex;
             flex-wrap: wrap;
-            /* border: 1px solid red; */
         }
         h1{
             width: 100%;
             text-align: center;
-            /* margin-left: 20px; */
         }
         h1{
             font-size: 45px;
@@ -33,20 +31,21 @@
             font-weight: bold;
             line-height: 200%;
         }
-        .row-cols-sm-1 > .col{
+        .col-sm-1{
             width: 100%;
         }
-        .row-cols-md-2 > .col{
+        .col-md-2{
             width: 50%;
         }
-        [class*=row-cols-] > .col{
+        [class*=col-]{
             padding: 10px;
             box-sizing: border-box;
         }
-        /* .web, .js{
-            margin-left: 60px;
+
+        .web, .js{
+            flex-grow: 1;
         }
-        .main{
+        /* .main{
             margin-left: 100px;
         } */
         body ul{
@@ -82,9 +81,9 @@
     </style>
 </head>
 <body>
-    <div class="group row-cols-sm-1 row-cols-md-2">
+    <div class="group">
         <h1>我的黑客作業</h1>
-        <div class="web col col">
+        <div class="web col-sm-12 col-md-6">
             <h2>我的 HTML + CSS 作業</h2>
             <ul class="main">
                 <li>作業一 :</li>
@@ -100,7 +99,7 @@
                 <p><a href="https://yu1129.github.io/html/Hw5_Bootstrap.html">Bootstrap</a></p>
             </ul>
         </div>
-        <div class="js col col">
+        <div class="js col-sm-12 col-md-6">
             <h2>我的 JavaScript 作業</h2>
             <ul class="main">
                 <li>作業一 :</li>
@@ -113,9 +112,9 @@
                 <p><a href="https://yu1129.github.io/JavaScript/Hw4_LoL.html">LoL</a></p>
                 <p><a href="https://yu1129.github.io/JavaScript/Hw4_MarketingShare.html">Pokemon</a></p>
                 <li>作業五 :</li>
-                <p><a href="https://yu1129.github.io/JavaScript/Hw5_ultimatepassword.html">終極密碼</a></p>
-                <p><a href="https://yu1129.github.io/JavaScript/Hw5_calculter.html">計算機</a></p>
-                <p><a href="https://yu1129.github.io/JavaScript/Hw5_howmanyAandB.html">幾A幾B</a></p>
+                <p><a href="https://yu1129.github.io/JavaScript/Hw5_Ultimatepassword.html">終極密碼</a></p>
+                <p><a href="https://yu1129.github.io/JavaScript/Hw5_Calculter_1.html">計算機</a></p>
+                <p><a href="https://yu1129.github.io/JavaScript/Hw5_HowmanyAandB.html">幾A幾B</a></p>
 
             </ul>
         </div>
