@@ -2215,6 +2215,8 @@
                     return;
                 }
                 //alert("以文字迭代英雄人物資料！");
+                
+                document.querySelector("#result").innerHTML = "";
 
                 heroArray.forEach((hero, index) =>{
                     let p1 = document.createElement("p");
@@ -2232,52 +2234,88 @@
                     return;
                 }
 
+                result.innerHTML = "";
 
-                document.querySelector("#result").innerHTML = "";
                 createTable();
-
+                
+                
                 alert("以表格呈現英雄人物資料！");
+                
+                let table2 = document.querySelector("#container > table:nth-of-type(2)");
+                table2.remove(table);
             });
+
+            
         }
+
         function createTable(){
             table = document.createElement("table");
             table.setAttribute("class", "table table-bordered table-striped table-dark");
+            thead = document.createElement("thead");
+            tbody = document.createElement("tbody");
             heroArray.forEach(hero => {
                 let value = Object.values(hero);
                 heroArray2.push(value);
             });
+
+            
             role = heroArray[0];
             titleArray = Object.keys(role);
+            
             createThead(titleArray);
             createTbody(heroArray2);
 
-            document.body.appendChild(table);
+            container.append(table);
         }
 
         function createThead(content){
-            thead = document.createElement("thead");
-            let tr = document.createElement("tr");
-            titleArray.forEach(col=> {
+            // thead = document.createElement("thead");
+            let theadTR = document.createElement("tr");
+            content.forEach(col=> {
                 let th = document.createElement("th");
                 th.innerHTML = col;
-                tr.append(th);
+                theadTR.append(th);
             });
-            thead.append(tr);
+            thead.append(theadTR);
             table.append(thead);
         }
         
         function createTbody(content){
-            tbody = document.createElement("tbody");
+            // tbody = document.createElement("tbody");
             content.forEach(hero => {
                 let tbodyTR = document.createElement("tr");
-                hero.forEach(content => {
+                hero.forEach((content, index) => {
                     let td = document.createElement("td");
                     td.innerText = content;
+                    td.addEventListener("click", function(){
+                        td.animate(tdSpinning, tdTiming);
+                        td.setAttribute("class", "text-danger");
+                        if (index != 2){
+                            td.setAttribute("style", "transform: translate(50px, 0) scale(2); background-color: aquamarine; z-index: 11;");
+                        }
+                        else {
+                            td.setAttribute("style", "transform: scale(2); background-color: aquamarine; z-index: 11;");
+                        }
+                    });
+                    td.addEventListener("mouseout", function(event){
+                        td.setAttribute("class", "text-white");
+                        td.setAttribute("style", "transform: scale(1)");
+                    });
                     tbodyTR.append(td);
                 });
                 tbody.append(tbodyTR);
-                table.append(tbody);
             });
+            table.append(tbody);
+        }
+
+        const tdSpinning = [
+            { transform: 'rotate(0) scale(1)' },
+            { transform: 'rotate(360deg) scale(2)' }
+        ];
+
+        const tdTiming = {
+            duration: 2000,
+            iterations: 1,
         }
 
     </script>
