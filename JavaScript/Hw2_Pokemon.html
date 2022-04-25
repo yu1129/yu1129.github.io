@@ -42,6 +42,7 @@
             container.innerHTML = pokemonImg;
         }
         function allPokemon(){
+            container.innerHTML="";
             for(let i=1; i<898; i++){
                 fileName = i.toString().padStart(3, "0");
                 paths(fileName);
