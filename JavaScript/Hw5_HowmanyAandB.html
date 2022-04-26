@@ -33,7 +33,7 @@
     <div class="group m-auto">
         <div class="input-group mb-3">
             <button class="btn btn-outline-secondary start" type="button">開始</button>
-            <button class="btn btn-outline-secondary give_up" type="button">放棄重來</button>
+            <button class="btn btn-outline-secondary give_up" type="button">放棄</button>
             <button class="btn btn-outline-secondary look" type="button">看答案</button>
         </div>
     
@@ -58,26 +58,58 @@
         let p, pinner, span;
         let answerArray = [];
         let tempArray = [];
-        let p_c = 0;
-        let m_c = 0;
+        let lookcount = 0;
 
+
+        let rule = document.createElement("div");
+        let h2 = document.createElement("h2");
+        let ol = document.createElement("ol");
+        let lisArray = ["點 \"開始\" ，遊戲才正式開始", "放棄後，需重新點擊開始才可遊戲","A 代表的是 數字對 且 位置也對", "B 代表的是 數字對 但 位置錯"];
+        
+        lisArray.forEach((item, index) => {
+            let li = document.createElement("li");
+            li.innerText = item;
+            ol.append(li);
+        })
+        h2.innerText = "遊戲規則";
+        h2.setAttribute("class", "text-center");
+        rule.append(h2);
+        rule.append(ol);
+        rule.setAttribute("class", "w-75 fs-2 m-auto my-3");
+
+        result.append(rule);
 
         start.addEventListener("click", function(event){
+            result.innerText = "";
             random();
             result.innerText = "";
             document.querySelector("#input_box").value = "";
+            // document.querySelector("#input_box").setAttribute("disabled", "disabled");
+            document.querySelector("#input_box").disabled = false;
+            look.disabled = false;
+            lookcount = 0;
         });
 
         giveup.addEventListener("click", function(event){
             result.innerText = "";
+            result.append(rule);
             document.querySelector("#input_box").value = "";
-            random();
+            look.disabled = true;
+            start.disabled = false;
+            // random();
         })
 
         look.addEventListener("click", function(event){
-            createp();
-            pinner.innerText = `答案是 : ${answer}`;
-            show_result();
+            if (lookcount == 0){
+                createp();
+                pinner.innerText = `答案是 : ${answer}`;
+                show_result();
+                // document.querySelector("#input_box").setAttribute("disabled", "disabled");
+                document.querySelector("#input_box").disabled = true;
+                start.disabled = true;
+            }
+            lookcount += 1;
+            return;
         })
 
         guess.addEventListener("click", function(event){
@@ -130,8 +162,8 @@
         }
 
         function judge(){
-            p_c = 0;
-            m_c = 0;
+            let p_c = 0;
+            let m_c = 0;
             for (var i = 0; i < 4; i++){
                 for (var j = 0; j < 4; j++){
                     if (i === j && answerArray[i] === tempArray[j]){
