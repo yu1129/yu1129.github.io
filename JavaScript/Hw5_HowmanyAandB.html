@@ -81,8 +81,6 @@
         })
 
         guess.addEventListener("click", function(event){
-            p_c = 0;
-            m_c = 0;
             input = document.querySelector("#input_box").value;
             tempArray = input.split("", 4);
             createp();
@@ -132,6 +130,8 @@
         }
 
         function judge(){
+            p_c = 0;
+            m_c = 0;
             for (var i = 0; i < 4; i++){
                 for (var j = 0; j < 4; j++){
                     if (i === j && answerArray[i] === tempArray[j]){
