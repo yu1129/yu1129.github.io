@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>幾A幾B</title>
+    <title>Hw3_Hw5_HowmanyAandB</title>
     <style>
         .group{
             padding: 20px;
@@ -21,6 +21,11 @@
         .result_show{
             border: 1px solid #CED4DA;
             border-radius: 5px;
+            height: 300px;
+        }
+        .result_show > p{
+            border-bottom: 2px solid #ccc;
+            /* margin-bottom: 0; */
         }
         .guess{
             border-radius: 5px;
@@ -30,146 +35,175 @@
     </style>
 </head>
 <body>
-    <div class="group m-auto">
-        <div class="input-group mb-3">
-            <button class="btn btn-outline-secondary start" type="button">開始</button>
-            <button class="btn btn-outline-secondary give_up" type="button">放棄</button>
-            <button class="btn btn-outline-secondary look" type="button">看答案</button>
-        </div>
     
-        <div class="form-floating mb-3 result_show overflow-auto" style="height: 300px">
-            <!-- <textarea class="form-control result_show" id="floatingTextarea2"></textarea> -->
-        </div>
     
-        <div class="input-group mb-3">
-            <span class="input-group-text">猜答案</span>
-            <input type="text" class="form-control" id="input_box">
-            <button class="guess">猜!</button>
-        </div>
-    </div>
     
     <script>
-        let result = document.querySelector(".result_show");
+        let body = document.querySelector("body");
+
+        // 建構
+        let group = document.createElement("div");
+        group.setAttribute("class", "group m-auto");
+        let input_group = document.createElement("div");
+        input_group.setAttribute("class", "input-group mb-3");
+        let btntopText = ["開始", "放棄", "看答案"];
+        let result = document.createElement("div");
+        result.setAttribute("class", "form-floating mb-3 result_show overflow-auto");
+        let input_group_bottom = document.createElement("div");
+        input_group_bottom.setAttribute("class", "input-group mb-3");
+        let spanfirst = document.createElement("span");
+        spanfirst.setAttribute("class", "input-group-text");
+        spanfirst.innerText = "猜答案";
+        let input = document.createElement("input");
+        input.setAttribute("class", "form-control input_box");
+        input.setAttribute("type", "text");
+        input.setAttribute("onkeyup", "value = value.replace(/[^\0-9]/g,'')");
+        let guess = document.createElement("button");
+        guess.setAttribute("class", "guess");
+        guess.innerText = "猜!";
+
+        btntopText.forEach(item => {
+            let btn = document.createElement("button");
+            if (item == "開始"){
+                btn.innerText = item;
+                btn.setAttribute("class", "btn btn-outline-secondary start")
+
+            }
+            else if (item == "放棄"){
+                btn.innerText = item;
+                btn.setAttribute("class", "btn btn-outline-secondary give_up")
+
+            }
+            else {
+                btn.innerText = item;
+                btn.setAttribute("class", "btn btn-outline-secondary look")
+
+            }
+            btn.setAttribute("type", "button");
+
+            input_group.append(btn);
+        });
+        group.append(input_group);
+        group.append(result);
+        group.append(input_group_bottom);
+        input_group_bottom.append(spanfirst);
+        input_group_bottom.append(input);
+        input_group_bottom.append(guess);
+        body.append(group);
+
+        // 遊戲判斷
+        let numberrange = [...Array(10).keys()];
         let start = document.querySelector(".start");
         let giveup = document.querySelector(".give_up");
         let look = document.querySelector(".look");
-        let guess = document.querySelector(".guess");
-        let answer, input;
-        let p, pinner, span;
+        let inputValue, idx, p, pinner;
         let answerArray = [];
-        let tempArray = [];
+        let inputArray = [];
         let lookcount = 0;
 
+        window.onload = function(){
+            start.addEventListener("click", () => {
+                result.innerText = "";
+                input.value = "";
+                numberrange = [...Array(10).keys()];
+                answerArray = [];
+                round();
+                input.disabled = false;
+                look.disabled = false;
+                lookcount = 0;
+            })
 
-        let rule = document.createElement("div");
-        let h2 = document.createElement("h2");
-        let ol = document.createElement("ol");
-        let lisArray = ["點 \"開始\" ，遊戲才正式開始", "放棄後，需重新點擊開始才可遊戲", "第一個數字不可為 零","A 代表的是 數字對 且 位置也對", "B 代表的是 數字對 但 位置錯"];
-        
-        lisArray.forEach((item, index) => {
-            let li = document.createElement("li");
-            li.innerText = item;
-            ol.append(li);
-        })
-        h2.innerText = "遊戲規則";
-        h2.setAttribute("class", "text-center");
-        rule.append(h2);
-        rule.append(ol);
-        rule.setAttribute("class", "w-75 fs-2 m-auto my-1");
+            giveup.addEventListener("click", () => {
+                result.innerText = "";
+                input.value = "";
+                numberrange = [...Array(10).keys()];
+                answerArray = [];
+                look.disabled = true;
+                input.disabled = true;
+                start.disabled = false;
+            })
+            
+            look.addEventListener("click", () => {
+                if (lookcount == 0){
+                    createp();
+                    p.classList.add("bg-danger");
 
-        result.append(rule);
+                    pinner.innerText = `答案是 : ${answerArray.toString().replace(/,/g, "")}`;
+                    show_result();
+                    input.disabled = true;
+                    start.disabled = true;
+                }
+                lookcount += 1;
+                return;
+            })
+            function createp(){
+                p = document.createElement("p");
+                p.setAttribute("class", "p-2 bg-gradient bg-opacity-25 lh-lg mb-0");
+                pinner = document.createElement("p");
+                pinner.setAttribute("class", "mb-0");
+            }
 
-        start.addEventListener("click", function(event){
-            result.innerText = "";
-            random();
-            result.innerText = "";
-            document.querySelector("#input_box").value = "";
-            document.querySelector("#input_box").disabled = false;
-            look.disabled = false;
-            lookcount = 0;
-        });
-
-        giveup.addEventListener("click", function(event){
-            result.innerText = "";
-            rule.animate(tdSpinning, tdTiming);
-            result.append(rule);
-            document.querySelector("#input_box").value = "";
-            look.disabled = true;
-            start.disabled = false;
-        })
-
-        look.addEventListener("click", function(event){
-            if (lookcount == 0){
+            guess.addEventListener("click", () => {
                 createp();
-                pinner.innerText = `答案是 : ${answer}`;
-                show_result();
-                document.querySelector("#input_box").disabled = true;
-                start.disabled = true;
-            }
-            lookcount += 1;
-            return;
-        })
-
-        guess.addEventListener("click", function(event){
-            input = document.querySelector("#input_box").value;
-            tempArray = input.split("", 4);
-            createp();
-            if (isRepeat(input.toString().split("", 4))){
-                alert("數字重複，請重新輸入");
-                document.querySelector("#input_box").value = "";
-            }
-            else if (checklength(input)){
-                alert("格式不符合，請重新輸入 \"4\" 位數字");
-                document.querySelector("#input_box").value = "";
-            }
-            else {
+                p.classList.add("bg-warning");
                 span = document.createElement("span");
+                span.setAttribute("class", "me-3 text-white py-1 px-3 rounded");
+
+                inputValue = input.value;
+                inputArray = inputValue.split("", 4);
+                if (inputArray.length != 4){
+                    alert("格式不符合，請重新輸入 \"4\" 位數字");
+                    input.value = "";
+                    return;
+                }
+                else if (new Set(input.value).size != 4){
+                    alert("數字重複，請重新輸入");
+                    input.value = "";
+                    return;
+                }
                 let temp = judge();
                 if (temp[0] == 4 && temp[2] == 0){
-                    span.classList.add("me-3", "text-white", "py-1", "px-3", "rounded");
                     span.setAttribute("style", "background-color: #62BD60;");
+                    p.setAttribute("class", "p-2 bg-success bg-gradient bg-opacity-25 mb-0");
+
                     p.append(span);
                     show_result();
                     setTimeout(function(){alert("恭喜猜中")}, 400);
                 }
                 else {
-                    span.classList.add("me-3", "text-white", "py-1", "px-3", "rounded");
                     span.setAttribute("style", "background-color: #DD5754;");
                 }
                 span.innerText = temp;
-                pinner.innerText = input;
+                pinner.innerText = inputValue;
                 pinner.classList.add("d-inline");
                 p.append(span);
                 show_result();
-            }
-        })
-
-
-        function checklength(string){
-            if (string.length < 4 || string.length > 4){
-                return true;
-            }
-            return false;
+            })
         }
 
-        function createp(){
-            p = document.createElement("p");
-            pinner = document.createElement("p");
-            p.classList.add("fs-5", "d-block", "border-bottom", "border-secondary", "mb-0", "py-1", "px-2");
-            pinner.classList.add("mb-0");
-        }
+        function round(){
+                for (let i = 0; i < 4; i++){
+                    idx = Math.floor(Math.random() * (numberrange.length - 1));
+                    answerArray.push(numberrange[idx]);
+                    numberrange.splice(idx, 1);
+                    if (answerArray[0] == 0 || answerArray[i] == undefined){
+                        numberrange = [...Array(10).keys()];
+                        answerArray = [];
+                        round();
+                    }
+                }
+            }
 
         function judge(){
             let p_c = 0;
             let m_c = 0;
-            for (var i = 0; i < 4; i++){
-                for (var j = 0; j < 4; j++){
-                    if (i === j && answerArray[i] === tempArray[j]){
-                        p_c += 1;
-                    }
-                    else if (i !== j && answerArray[i] === tempArray[j]){
-                        m_c += 1;
-                    }
+            for (let i = 0; i < answerArray.length; i++){
+                if (answerArray[i] == inputArray[i]){
+                    p_c += 1;
+                }
+                else if (inputArray.toString().replace(/,/g, '').indexOf(answerArray[i]) > -1)
+                {
+                    m_c += 1;
                 }
             }
             return `${p_c}A${m_c}B`;
@@ -178,52 +212,9 @@
         function show_result(){
             p.append(pinner);
             result.append(p);
-            document.querySelector("#input_box").value = "";
-        }
-
-        function random(){
-            answer = getRandomInt(1234, 9876);
-            answerArray = answer.toString().split("", 4);
-            while (true){
-                if (isRepeat(answer.toString().split("", 4))){
-                    answer = getRandomInt(1234, 9876);
-                    answerArray = answer.toString().split("", 4);
-                }
-                else{
-                    break;
-                }
-            }
-        }
-
-        function isRepeat(array){
-            let aArray = array;
-            var sample = aArray.sort();
-            for(var i = 0; i < array.length; i++){
-                if (sample[i] == sample[i+1]){
-                    return true;
-                    break;
-                }
-            }
-            return false;
-        }
-
-        function getRandomInt(min, max) {
-            min = Math.ceil(min);
-            max = Math.floor(max);
-            return Math.floor(Math.random() * (max - min) + min);
-        }
-
-        const tdSpinning = [
-            { transform: 'rotate(0) scale(0)' },
-            { transform: 'rotate(360deg) scale(1)' }
-        ];
-
-        const tdTiming = {
-            duration: 2000,
-            iterations: 1,
+            input.value = "";
         }
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
