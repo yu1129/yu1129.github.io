@@ -6,7 +6,7 @@ let colors, price, storage, network, imgs, productimgs;
 let colorsList = [];
 let storageList = [];
 let networkList = []
-let styles;
+let styles, spend;
 
 xhr.onload = function(){
     ipadArray = JSON.parse(this.responseText);
@@ -22,6 +22,8 @@ window.onload = function (){
     let bundlestorage = document.querySelectorAll(".bundlestorage");
     let bundleconnect = document.querySelectorAll(".bundleconnect");
     let bundlestyle = document.querySelectorAll(".bundlestyle");
+    let spendshow = document.querySelector(".title > p");
+    let contentp = document.querySelector(".content > p:last-of-type")
     let clickcolor, clickstorage, clickconnect, clickstyle;
     
     bundles.forEach((item, index) => {
@@ -34,6 +36,14 @@ window.onload = function (){
             left.innerHTML = "";
             left.innerHTML = `<img src = 'Hw6_iPadAir/${productimgs[index]}' alt = ${colors[index]}>`;
             clickcolor = item;
+            // contentp.classList.toggle("active");
+            // var dropdown = this.nextElementSibling;
+            // if (dropdown.style.display === "block"){
+            //     dropdown.style.display = "none";
+            // }
+            // else {
+            //     dropdown.style.display = "block";
+            // }
         });
     });
 
@@ -44,6 +54,10 @@ window.onload = function (){
             }
             item.setAttribute("style", "border: 3px solid #0775E4;");
             clickconnect = item;
+            spend = item.querySelector("p:last-of-type").innerText;
+            spendshow.innerText = `NT$  ${new Intl.NumberFormat().format(spend.substring(4, 10).replace(",", ""))}  起`;
+            bundleconnect[0].querySelector("p:last-of-type").innerText = `NT$  ${new Intl.NumberFormat().format(spend.substring(4, 10).replace(",", ""))}  起`;
+            bundleconnect[1].querySelector("p:last-of-type").innerText = `NT$  ${new Intl.NumberFormat().format(price[2])}  起`;
         });
     });
 
@@ -54,6 +68,8 @@ window.onload = function (){
             }
             item.setAttribute("style", "border: 3px solid #0775E4;");
             clickstorage = item;
+            spend = item.querySelector("p:last-of-type").innerText;
+            spendshow.innerText = `NT$  ${new Intl.NumberFormat().format(spend.substring(4, 10).replace(",", ""))}  起`;
         });
     });
 
@@ -75,7 +91,6 @@ function createHE(jsArray){
     network = [...new Set(jsArray.map(x => x.network))];
     imgs = [...new Set(jsArray.map(x => x.picture))];
     productimgs = [...new Set(jsArray.map(x => x.productimg))];
-    price.pop();
     colors.forEach((item, index) => {
         colorsList.push([item, imgs[index]]);
     });
@@ -153,6 +168,9 @@ function createHE(jsArray){
     storagenotice.innerHTML = "<span>提前為日後預留空間。</span>你的 iPad Air 儲存空間愈大， 你就有愈多空間儲存數位內容，滿足今日所需，也滿足未來需求。";
     
     storageList.forEach((item, index) => {
+        if (index == 2){
+            return;
+        }
         let block = document.createElement("div");
         block.setAttribute("class", "col-6");
         let bundle = document.createElement("div");
@@ -182,6 +200,9 @@ function createHE(jsArray){
     connectnotice.setAttribute("class", "connectnotice");
     connectnotice.innerHTML = "<span>兩種快速的方式，讓你時時保持聯繫。</span>每部 iPad Air 都可連接到 Wi-Fi 網路。Wi-Fi + 行動網路機型則讓你在無法使用 Wi-Fi 時，也能連上線。";
     networkList.forEach((item, index) => {
+        if (index == 2){
+            return;
+        }
         let block = document.createElement("div");
         block.setAttribute("class", "col-6");
         let bundle = document.createElement("div");
