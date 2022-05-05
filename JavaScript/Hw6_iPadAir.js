@@ -6,7 +6,7 @@ let colors, price, storage, network, imgs, productimgs;
 let colorsList = [];
 let storageList = [];
 let networkList = []
-let styles, spend;
+let styles, spendstorage, spendconnect;
 
 xhr.onload = function(){
     ipadArray = JSON.parse(this.responseText);
@@ -23,55 +23,94 @@ window.onload = function (){
     let bundleconnect = document.querySelectorAll(".bundleconnect");
     let bundlestyle = document.querySelectorAll(".bundlestyle");
     let spendshow = document.querySelector(".title > p");
-    let contentp = document.querySelector(".content > p:last-of-type")
+    let contentp1 = document.querySelectorAll(".content > p:first-of-type");
+    let contentp2 = document.querySelectorAll(".content > p:last-of-type");
     let clickcolor, clickstorage, clickconnect, clickstyle;
     
     bundles.forEach((item, index) => {
         item.addEventListener("click", function(event){
-            // console.log(item.innerText);
             if (item != clickcolor && clickcolor != undefined){
                 clickcolor.removeAttribute("style", "border: 3px solid #0775E4;");
             }
             item.setAttribute("style", "border: 3px solid #0775E4;");
             left.innerHTML = "";
             left.innerHTML = `<img src = 'Hw6_iPadAir/${productimgs[index]}' alt = ${colors[index]}>`;
+            left.querySelector("img").animate(tdSpinning, tdTiming);
             clickcolor = item;
-            // contentp.classList.toggle("active");
-            // var dropdown = this.nextElementSibling;
-            // if (dropdown.style.display === "block"){
-            //     dropdown.style.display = "none";
-            // }
-            // else {
-            //     dropdown.style.display = "block";
-            // }
+            openandclose(item, 0);
+        });
+    });
+
+    function openandclose(item, index){
+        if (item != null){
+            contentp2[index].style.display = "none";
+            contentp1[index].innerHTML = item.querySelector("p").innerText;
+            let span = document.createElement("span");
+            span.innerText = "更改";
+            span.setAttribute("class", "text-primary fs-6");
+            contentp1[index].append(span);
+            contentp1[index].setAttribute("class", "fs-1 fw-3 d-flex justify-content-between align-item-center");
+            contentp1[index].setAttribute("style", "cursor: pointer");
+        }
+    }
+
+    contentp1.forEach((item, index) => {
+        item.addEventListener("click", function(){
+            contentp2[index].style.display = "flex";
+            contentp1[index].removeAttribute("class", "fs-1 fw-3");
+            contentp1[index].removeAttribute("style", "cursor: pointer");
+            if (index == 0){
+                contentp1[index].innerText = "外觀";
+            }
+            else if (index == 1){
+                contentp1[index].innerText = "儲存裝置";
+            }
+            else if (index == 2){
+                contentp1[index].innerText = "連線能力";
+            }
+            else {
+                contentp1[index].innerText = "讓你的裝置更具風格";
+            }
         });
     });
 
     bundlestorage.forEach((item, index) => {
-        item.addEventListener("click", function(event){
-            if (item != clickconnect && clickconnect != undefined){
-                clickconnect.removeAttribute("style", "border: 3px solid #0775E4;");
-            }
-            item.setAttribute("style", "border: 3px solid #0775E4;");
-            clickconnect = item;
-            spend = item.querySelector("p:last-of-type").innerText;
-            spendshow.innerText = `NT$  ${new Intl.NumberFormat().format(spend.substring(4, 10).replace(",", ""))}  起`;
-            bundleconnect[0].querySelector("p:last-of-type").innerText = `NT$  ${new Intl.NumberFormat().format(spend.substring(4, 10).replace(",", ""))}  起`;
-            bundleconnect[1].querySelector("p:last-of-type").innerText = `NT$  ${new Intl.NumberFormat().format(price[2])}  起`;
-        });
-    });
-
-    bundleconnect.forEach((item, index) => {
         item.addEventListener("click", function(event){
             if (item != clickstorage && clickstorage != undefined){
                 clickstorage.removeAttribute("style", "border: 3px solid #0775E4;");
             }
             item.setAttribute("style", "border: 3px solid #0775E4;");
             clickstorage = item;
-            spend = item.querySelector("p:last-of-type").innerText;
-            spendshow.innerText = `NT$  ${new Intl.NumberFormat().format(spend.substring(4, 10).replace(",", ""))}  起`;
+            spendstorage = clickstorage.querySelector("p:last-of-type").innerText;
+            bundleconnect[0].querySelector("p:last-of-type").innerText = `NT$  ${new Intl.NumberFormat().format(spendstorage.substring(4, spendstorage.length - 2).replace(",", ""))}  起`;
+            bundleconnect[1].querySelector("p:last-of-type").innerText = `NT$  ${new Intl.NumberFormat().format(price[price.indexOf(parseInt(spendstorage.substring(4, spendstorage.length - 2).replace(",", ""))) + 1])}  起`;
+            openandclose(item, 1);
+            if (clickconnect == null){
+                spendshow.innerText = `NT$  ${new Intl.NumberFormat().format(parseInt(spendstorage.substring(4, spendstorage.length - 2).replace(",", "")))}  起`;
+            }
+            else{
+                calculate();
+            }
         });
     });
+
+    bundleconnect.forEach((item, index) => {
+        item.addEventListener("click", function(event){
+            if (item != clickconnect && clickconnect != undefined){
+                clickconnect.removeAttribute("style", "border: 3px solid #0775E4;");
+            }
+            item.setAttribute("style", "border: 3px solid #0775E4;");
+            clickconnect = item;
+            spendconnect = clickconnect.querySelector("p:last-of-type").innerText;
+            spendshow.innerText = `NT$  ${new Intl.NumberFormat().format(spendconnect.substring(4, spendconnect.length - 2).replace(",", ""))}  起`;
+            openandclose(item, 2);
+        });
+    });
+
+    function calculate(){
+        spendconnect = clickconnect.querySelector("p:last-of-type").innerText;
+        spendshow.innerText = `NT$  ${new Intl.NumberFormat().format(parseInt(spendconnect.substring(4, spendconnect.length - 2).replace(",", "")))}  起`;
+    }
 
     bundlestyle.forEach((item, index) => {
         item.addEventListener("click", function(event){
@@ -80,9 +119,12 @@ window.onload = function (){
             }
             item.setAttribute("style", "border: 3px solid #0775E4;");
             clickstyle = item;
+            openandclose(item, 3);
         });
     });
 }
+
+
 function createHE(jsArray){
     // 創建基本陣列
     colors = [...new Set(jsArray.map(x => x.color))];
@@ -132,6 +174,7 @@ function createHE(jsArray){
     content.setAttribute("class", "content");
     let p3 = document.createElement("p");
     p3.innerText = "外觀";
+    p3.setAttribute("class", "d-flex");
     let exteriorp = document.createElement("p");
     colorsList.forEach((item, index) => {
         let block = document.createElement("div");
@@ -166,7 +209,7 @@ function createHE(jsArray){
     let storagenotice = document.createElement("div");
     storagenotice.setAttribute("class", "storagenotie");
     storagenotice.innerHTML = "<span>提前為日後預留空間。</span>你的 iPad Air 儲存空間愈大， 你就有愈多空間儲存數位內容，滿足今日所需，也滿足未來需求。";
-    
+    storagep.append(storagenotice);
     storageList.forEach((item, index) => {
         if (index == 2){
             return;
@@ -186,7 +229,6 @@ function createHE(jsArray){
         storagep.append(block);
     });
     contentstorage.append(p4);
-    contentstorage.append(storagenotice);
     contentstorage.append(storagep);
     right.append(contentstorage);
 
@@ -199,6 +241,7 @@ function createHE(jsArray){
     let connectnotice = document.createElement("div");
     connectnotice.setAttribute("class", "connectnotice");
     connectnotice.innerHTML = "<span>兩種快速的方式，讓你時時保持聯繫。</span>每部 iPad Air 都可連接到 Wi-Fi 網路。Wi-Fi + 行動網路機型則讓你在無法使用 Wi-Fi 時，也能連上線。";
+    connectp.append(connectnotice);
     networkList.forEach((item, index) => {
         if (index == 2){
             return;
@@ -208,7 +251,7 @@ function createHE(jsArray){
         let bundle = document.createElement("div");
         bundle.setAttribute("class", "bundleconnect");
         let innerp = document.createElement("p");
-        innerp.setAttribute("class", "fs-3");
+        innerp.setAttribute("class", "fs-4");
         innerp.innerText = item[1];
         let innerp2 = document.createElement("p");
         innerp2.innerText = `NT$  ${new Intl.NumberFormat().format(item[0])}  起`;
@@ -218,7 +261,6 @@ function createHE(jsArray){
         connectp.append(block);
     });
     connect.append(p5);
-    connect.append(connectnotice);
     connect.append(connectp);
     right.append(connect);
 
@@ -231,6 +273,7 @@ function createHE(jsArray){
     let stylenotice = document.createElement("div");
     stylenotice.setAttribute("class", "stylenotice");
     stylenotice.innerHTML = "<span>為你的 iPad Air 特製個人特色，免額外付費。</span>表情符號、名稱、暱稱文字與數字可混搭鐫刻，打造專屬於你的 iPad Air。只在 Apple 提供。";
+    stylep.append(stylenotice);
     styles.forEach((item, index) => {
         let block = document.createElement("div");
         block.setAttribute("class", "col-12");
@@ -247,7 +290,16 @@ function createHE(jsArray){
         stylep.append(block);
     });
     style.append(p6);
-    style.append(stylenotice);
     style.append(stylep);
     right.append(style);
+}
+
+const tdSpinning = [
+    { transform: 'rotate(0) scale(0)' },
+    { transform: 'rotate(360deg) scale(1)' }
+];
+
+const tdTiming = {
+    duration: 2000,
+    iterations: 1,
 }
