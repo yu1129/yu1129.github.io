@@ -197,23 +197,29 @@
 
             Object.values(heroArray[3]).forEach((item, index) => {
                 
-                container.append(getCard(`${item.id} - ${item.name}`, `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${item.id}_0.jpg`, `${item.blurb}`));
+                container.append(getCard(item));
                 
                 
+                // setModal1(`${item.id} - ${item.name}`, `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${item.id}_0.jpg`, item.stats.hp, item.stats.movespeed, item.stats.armor, item.stats.spellblock, item.stats.attackrange);
                 
-                setModal1(`${item.id} - ${item.name}`, `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${item.id}_0.jpg`, item.stats.hp, item.stats.movespeed, item.stats.armor, item.stats.spellblock, item.stats.attackrange);
-                
-                setModal2(`${item.id} - ${item.name}`, `https://www.youtube.com/embed/MiXdbOIWU3c`);
+                // setModal2(`${item.id} - ${item.name}`, `https://www.youtube.com/embed/MiXdbOIWU3c`);
                 
             })
         }
 
-        function getCard(title, imgurl, content){
+        function getCard(item){
             let cloneCard = cardTemplate.content.cloneNode(true);
 
-            cloneCard.querySelector("img").src = imgurl;
-            cloneCard.querySelector("h5").innerText = title;
-            cloneCard.querySelector("p").innerText = content;
+            cloneCard.querySelector("img").src = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${item.id}_0.jpg`;
+            cloneCard.querySelector("h5").innerText = `${item.id} - ${item.name}`;
+            cloneCard.querySelector("p").innerText = `${item.blurb}`;
+            cloneCard.querySelector("a").addEventListener("click", function(event){
+                setModal1(`${item.id} - ${item.name}`, `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${item.id}_0.jpg`, item.stats.hp, item.stats.movespeed, item.stats.armor, item.stats.spellblock, item.stats.attackrange);
+            })
+            cloneCard.querySelector("#videoButton").addEventListener("click", function(event){
+                setModal2(`${item.id} - ${item.name}`, `https://www.youtube.com/embed/MiXdbOIWU3c`);
+            })
+
 
             // cloneCard.querySelector("#contentButton").setAttribute = ("data-bs-toggle", "modal");
             // cloneCard.querySelector("#contentButton").setAttribute = ("data-bs-target", "#contentModal");
