@@ -56,13 +56,17 @@ h1{
 }
 
 /* 分類 */
-.category{
+.category-limit .category{
     width: 80%;
     height: 200px;
-}
-.category-limit .category{
     top: -70px;
     left: 0;
+}
+.category-limit i{
+    color: #138184;
+}
+.category-limit p{
+    color: black;
 }
 
 /* big-info */
