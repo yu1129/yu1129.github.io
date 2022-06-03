@@ -1,0 +1,2239 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/277e856a27.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/fontawesome.min.css">
+    <!-- <link rel="stylesheet" href="./icofont/icofont/icofont.min.css"> -->
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./homestyle.css">
+    <link rel="stylesheet" href="./shared.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <header class="nav-limit w-100 position-fixed border-bottom border-secondary">
+        <nav class="navbar navbar-expand-lg fixed-width m-auto">
+            <div class="container-fluid px-2 px-md-4">
+                <h1>
+                    <a href="#" class="align-top">
+                        <img src="./LOGO.png" alt="Today" class="align-top w-100">
+                    </a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-black"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav my-2 my-lg-0">
+                        <!-- 手機 -->
+                        <li class="nav-item d-sm-block d-lg-none m-2">
+                            <a class="nav-link text-secondary text-opacity-75" href="#">
+                                <i class="fa-solid fa-right-to-bracket"></i>
+                                登入
+                            </a>
+                        </li>
+                        <li class="nav-item d-sm-block d-lg-none border-bottom m-2 pb-3">
+                            <a class="nav-link text-secondary text-opacity-75" href="#">
+                                <i class="fa-solid fa-user"></i>
+                                註冊
+                            </a>
+                        </li>
+                        <li class="nav-item d-sm-block d-lg-none m-2">
+                            <a class="nav-link text-secondary text-opacity-75" href="#">
+                                <i class="fa-regular fa-circle-question"></i>
+                                常見問題與幫助
+                            </a>
+                        </li>
+                        <!-- 筆電 -->
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link text-secondary text-opacity-75" href="#">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link text-secondary text-opacity-75" href="#">登入/註冊</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- 分類 -->
+    <!-- <section class="category-limit w-100 py-2">
+        <div class="category fixed-width m-auto">
+            <ul class="d-flex overflow-hidden position-relative">
+                <li class="px-3 py-1 border-end border-secondary">
+                    <a herf="#">住宿</a>
+                </li>
+                <li class="px-3 py-1 border-end border-secondary">
+                    <a herf="#">景點門票</a>
+                </li>
+                <li class="px-3 py-1 border-end border-secondary">
+                    <a herf="#">觀光行程</a>
+                </li>
+                <li class="px-3 py-1 border-end border-secondary">
+                    <a herf="#">美食 & 生鮮</a>
+                </li>
+                <li class="px-3 py-1 border-end border-secondary">
+                    <a herf="#">戶外活動</a>
+                </li>
+                <li class="px-3 py-1 border-end border-secondary">
+                    <a herf="#">高鐵國旅聯票</a>
+                </li>
+                <li class="px-3 py-1 border-end border-secondary">
+                    <a herf="#">交通</a>
+                </li>
+                <li class="px-3 py-1 border-end border-secondary">
+                    <a herf="#">交通</a>
+                </li>
+                <li class="px-3 py-1 border-end border-secondary">
+                    <a herf="#">紓壓 & 放鬆</a>
+                </li>
+                <li class="px-3 py-1 border-end border-secondary">
+                    <a herf="#">伴手禮</a>
+                </li>
+                <li class="px-3 py-1 border-end border-secondary">
+                    <a herf="#">活動 & 展覽</a>
+                </li>
+                <li class="px-3 py-1 border-end border-secondary">
+                    <a herf="#">WiFi & SIM</a>
+                </li>
+                <li class="px-3 py-1 border-end border-secondary">
+                    <a herf="#">工作坊 & 在地文化</a>
+                </li>
+                <li class="px-3 py-1">
+                    <a herf="#">旅遊服務</a>
+                </li>
+                <div class="afterward bg-danger bg-opacity-50 position-absolute">
+                    <i class="fa-solid fa-chevron-right text-black my-1"></i>
+                </div>
+            </ul>
+        </div>
+    </section> -->
+
+    <!-- 大廣告圖區 -->
+    <section class="main-introd-limit w-100 py-5 text-white">
+        <div class="main-introd fixed-width m-auto px-sm-2 px-md-3 py-5">
+            <!-- <img src="https://picsum.photos/1160/600/?random=10" alt="ToDay 說走就走" class="w-100 d-none"> -->
+            <div class="content w-100 justify-content-center align-items-center text-center">
+                <p class="mb-2 fs-3">全世界最棒的旅遊體驗</p>
+                <p class="mb-3">帶你深入所有趣又獨特的旅遊體驗行程</p>
+                <div class="input-group mb-3 w-75 m-auto">
+                    <input type="text" class="form-control" placeholder="輸入目的地、景點、體驗行程或活動名稱…" aria-label="Recipient's username" aria-describedby="search">
+                    <button class="btn" type="button" id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分類 -->
+    <section class="category-limit w-100 py-3">
+        <div class="category fixed-width m-auto position-relative rounded">
+            <ul class="list-unstyled bg-light rounded-3 d-flex flex-wrap">
+                <li class="col-3 p-3 col-xl-2">
+                    <div class="city-type text-center">
+                        <a href="#" class="text-decoration-none text-center">
+                            <i class="fa-solid fa-bed"></i>
+                            <br>
+                            <p class="mt-2">住宿</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-3 p-3 col-xl-2">
+                    <div class="city-type text-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-mountain-sun"></i>
+                            <br>
+                            <p class="mt-2">景點門票</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-3 p-3 col-xl-2">
+                    <div class="city-type text-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-jet-fighter"></i>
+                            <br>
+                            <p class="mt-2">觀光行程</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-3 p-3 col-xl-2">
+                    <div class="city-type text-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-bowl-food"></i>
+                            <br>
+                            <p class="mt-2">美食 & 生鮮</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-3 p-3 col-xl-2">
+                    <div class="city-type text-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-volleyball"></i>
+                            <br>
+                            <p class="mt-2">戶外活動</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-3 p-3 col-xl-2">
+                    <div class="city-type text-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-train-subway"></i>
+                            <br>
+                            <p class="mt-2">高鐵國旅聯票</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-3 p-3 col-xl-2">
+                    <div class="city-type text-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-car"></i>
+                            <br>
+                            <p class="mt-2">交通</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-3 p-3 col-xl-2">
+                    <div class="city-type text-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-couch"></i>
+                            <br>
+                            <p class="mt-2">紓壓 & 放鬆</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-3 p-3 col-xl-2">
+                    <div class="city-type text-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-gift"></i>
+                            <br>
+                            <p class="mt-2">伴手禮</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-3 p-3 col-xl-2">
+                    <div class="city-type text-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-images"></i>
+                            <br>
+                            <p class="mt-2">活動 & 展覽</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-3 p-3 col-xl-2">
+                    <div class="city-type text-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-sim-card"></i>
+                            <br>
+                            <p class="mt-2">WiFi & SIM</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-3 p-3 col-xl-2">
+                    <div class="city-type text-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-place-of-worship"></i>
+                            <br>
+                            <p class="mt-2">工作坊 & 在地文化</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-3 p-3 col-xl-2">
+                    <div class="city-type text-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-solid fa-plane-departure"></i>
+                            <br>
+                            <p class="mt-2">旅遊服務</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 熱門活動分類 -->
+    <section class="action-limit w-100 py-5 position-relative">
+        <div class="action fixed-width m-auto px-sm-2 px-md-3 d-flex flex-wrap">
+            <h3 class="hot-action w-100 mb-4 mx-2">熱門活動分類</h3>
+            <div class="forward rounded-circle bg-secondary bg-opacity-50 text-center my-auto d-none position-absolute">
+                <i class="fa-solid fa-angle-left text-black fs-3 lh-1"></i>
+            </div>
+            <div class="group-card w-100 d-flex flex-nowrap">
+                <div class="card col-2 mx-2">
+                    <a href="#" class="text-decoration-none text-black">
+                        <img src="https://picsum.photos/400/300/?random=11" class="card-img-top" alt="防疫旅館 防疫">
+                        <div class="card-body">
+                            <h4 class="card-title">防疫旅館</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-2 mx-2">
+                    <a href="#" class="text-decoration-none text-black">
+                        <img src="https://picsum.photos/400/300/?random=12" class="card-img-top" alt="離島旅行 離島">
+                        <div class="card-body">
+                            <h4 class="card-title">離島旅行</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-2 mx-2">
+                    <a href="#" class="text-decoration-none text-black">
+                        <img src="https://picsum.photos/400/300/?random=13" class="card-img-top" alt="戶外露營 露營">
+                        <div class="card-body">
+                            <h4 class="card-title">戶外露營</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-2 mx-2">
+                    <a href="#" class="text-decoration-none text-black">
+                        <img src="https://picsum.photos/400/300/?random=14" class="card-img-top" alt="親子專區 親子">
+                        <div class="card-body">
+                            <h4 class="card-title">親子專區</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-2 mx-2">
+                    <a href="#" class="text-decoration-none text-black">
+                        <img src="https://picsum.photos/400/300/?random=15" class="card-img-top" alt="伴手禮">
+                        <div class="card-body">
+                            <h4 class="card-title">伴手禮</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-2 mx-2">
+                    <a href="#" class="text-decoration-none text-black">
+                        <img src="https://picsum.photos/400/300/?random=16" class="card-img-top" alt="DIY課程 DIY">
+                        <div class="card-body">
+                            <h4 class="card-title">DIY課程</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-2 mx-2">
+                    <a href="#" class="text-decoration-none text-black">
+                        <img src="https://picsum.photos/400/300/?random=17" class="card-img-top" alt="高鐵聯票 高鐵">
+                        <div class="card-body">
+                            <h4 class="card-title">高鐵聯票</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-2 mx-2">
+                    <a href="#" class="text-decoration-none text-black">
+                        <img src="https://picsum.photos/400/300/?random=18" class="card-img-top" alt="租車自駕 租車">
+                        <div class="card-body">
+                            <h4 class="card-title">租車自駕</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="afterward rounded-circle bg-secondary bg-opacity-50 text-center my-auto position-absolute">
+                <i class="fa fas fa-angle-right text-black fs-3 lh-1"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新旅遊優惠 -->
+    <section class="new-limit w-100 py-5 position-relative">
+        <div class="discount fixed-width m-auto px-sm-2 px-md-3 d-flex flex-wrap">
+            <h3 class="new-discount d-block w-100 mb-4 ms-2">最新旅遊優惠</h3>
+            <div class="forward rounded-circle bg-secondary bg-opacity-50 text-center my-auto d-none position-absolute">
+                <i class="fa-solid fa-angle-left text-black fs-3 lh-1"></i>
+            </div>
+            <div class="group-card d-flex flex-nowrap">
+                <div class="pic col-12 col-md-6 col-lg-4 p-2">
+                    <a href="#">
+                        <img src="https://picsum.photos/300/200/?random=10" class="w-100 align-top rounded">
+                    </a>
+                </div>
+                <div class="pic col-12 col-md-6 col-lg-4 p-2">
+                    <a href="#">
+                        <img src="https://picsum.photos/300/200/?random=11" class="w-100 align-top rounded">
+                    </a>
+                </div>
+                <div class="pic col-12 col-md-6 col-lg-4 p-2">
+                    <a href="#">
+                        <img src="https://picsum.photos/300/200/?random=12" class="w-100 align-top rounded">
+                    </a>
+                </div>
+                <div class="pic col-12 col-md-6 col-lg-4 p-2">
+                    <a href="#">
+                        <img src="https://picsum.photos/300/200/?random=13" class="w-100 align-top rounded">
+                    </a>
+                </div>
+                <div class="pic col-12 col-md-6 col-lg-4 p-2">
+                    <a href="#">
+                        <img src="https://picsum.photos/300/200/?random=14" class="w-100 align-top rounded">
+                    </a>
+                </div>
+            </div>
+            <div class="afterward rounded-circle bg-secondary bg-opacity-50 text-center my-auto position-absolute">
+                <i class="fa fas fa-angle-right text-black fs-3 lh-1"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 探索城市 -->
+    <section class="city-limit w-100 py-5 position-relative">
+        <div class="city fixed-width m-auto px-sm-2 px-md-3 d-flex flex-wrap">
+            <h3 class="city w-100 mb-4 ms-2">探索熱門城市</h3>
+            <div class="forward rounded-circle bg-secondary bg-opacity-50 text-center my-auto d-none position-absolute">
+                <i class="fa-solid fa-angle-left text-black fs-3 lh-1"></i>
+            </div>
+            <div class="group-card d-flex">
+                <div class="taipei col-12 col-md-4 col-lg-4 p-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <img src="https://picsum.photos/300/200/?random=10" alt="台北 Taipei" class="w-100 h-100 rounded">
+                        <div class="city-details position-absolute text-white d-flex flex-wrap">
+                            <h4 class="mb-2 ms-2 w-100">台北</h4>
+                            <span class="px-2 py-1 mb-1">交通 & 旅遊必備</span>
+                            <span class="px-2 py-1 mb-1">熱門票卷</span>
+                            <span class="px-2 py-1 mb-1">更多在地體驗</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="new-taipei col-12 col-md-4 col-lg-2 p-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <img src="https://picsum.photos/300/200/?random=11" alt="新北 New Taipei" class="w-100 h-100 rounded">
+                        <div class="city-details position-absolute text-white d-flex flex-wrap">
+                            <h4 class="mb-2 ms-2 w-100">新北</h4>
+                            <span class="px-2 py-1 d-lg-none mb-1">交通 & 旅遊必備</span>
+                            <span class="px-2 py-1 d-lg-none mb-1">熱門票卷</span>
+                            <span class="px-2 py-1 d-lg-none mb-1">更多在地體驗</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="keelung col-12 col-md-4 col-lg-2 p-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <img src="https://picsum.photos/300/200/?random=12" alt="基隆 Keelung" class="w-100 h-100 rounded">
+                        <div class="city-details position-absolute text-white d-flex flex-wrap">
+                            <h4 class="mb-2 ms-2 w-100">基隆</h4>
+                            <span class="px-2 py-1 d-lg-none mb-1">交通 & 旅遊必備</span>
+                            <span class="px-2 py-1 d-lg-none mb-1">熱門票卷</span>
+                            <span class="px-2 py-1 d-lg-none mb-1">更多在地體驗</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="taoyuan col-12 col-md-6 col-lg-2 p-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <img src="https://picsum.photos/300/200/?random=13" alt="桃園 Taoyuan" class="w-100 h-100 rounded">
+                        <div class="city-details position-absolute text-white d-flex flex-wrap">
+                            <h4 class="mb-2 ms-2 w-100">桃園</h4>
+                            <span class="px-2 py-1 d-lg-none mb-1">交通 & 旅遊必備</span>
+                            <span class="px-2 py-1 d-lg-none mb-1">熱門票卷</span>
+                            <span class="px-2 py-1 d-lg-none mb-1">更多在地體驗</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="yilan col-12 col-md-6 col-lg-2 p-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <img src="https://picsum.photos/300/200/?random=14" alt="宜蘭 yilan" class="w-100 h-100 rounded" >
+                        <div class="city-details position-absolute text-white d-flex flex-wrap">
+                            <h4 class="mb-2 ms-2 w-100">宜蘭</h4>
+                            <span class="px-2 py-1 d-lg-none mb-1">交通 & 旅遊必備</span>
+                            <span class="px-2 py-1 d-lg-none mb-1">熱門票卷</span>
+                            <span class="px-2 py-1 d-lg-none mb-1">更多在地體驗</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="afterward rounded-circle bg-secondary bg-opacity-50 text-center my-auto d-md-none position-absolute">
+                <i class="fa fas fa-angle-right text-black fs-3 lh-1"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最近瀏覽 -->
+    <section class="looked-limit w-100 py-5 position-relative">
+        <div class="looked fixed-width m-auto px-sm-2 px-md-3 d-flex flex-wrap">
+            <h3 class="w-100 mb-4 ms-2">最近瀏覽</h3>
+            <div class="forward rounded-circle bg-secondary bg-opacity-50 text-center my-auto d-none position-absolute">
+                <i class="fa-solid fa-angle-left text-black fs-3 lh-1"></i>
+            </div>
+            <div class="row-card-group group-card d-flex w-100">
+                <div class="row-card mb-3 me-2 col-12 col-md-6 col-xl-4 p-0 mx-md-0 p-2">
+                    <div class="row g-0 h-100 overflow-hidden align-items-center">
+                        <div class="col-4">
+                            <img src="https://picsum.photos/300/200/?random=10" class="rounded-start align-top w-100 h-100" alt="離島涼爽一下">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <div class="title-group d-flex justify-content-between">
+                                    <h5 class="card-title align-items-center w-75">
+                                        <i class="fa-solid fa-bolt-lightning"></i>
+                                        【預售77折】台北展覽|挑戰一安藤忠雄展 TADAO ANDO : ENDEAVORS 門票
+                                    </h5>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p class="card-text text-end fs-6"><span>TWD</span>299</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-card mb-3 me-2 col-12 col-md-6 col-xl-4 p-0 mx-md-0 p-2">
+                    <div class="row g-0 h-100 overflow-hidden align-items-center">
+                        <div class="col-4">
+                            <img src="https://picsum.photos/300/200/?random=10" class="rounded-start align-top w-100 h-100" alt="離島涼爽一下">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <div class="title-group d-flex justify-content-between">
+                                    <h5 class="card-title align-items-center">
+                                        <i class="fa-solid fa-bolt-lightning"></i>
+                                        【預售74折】台北展覽|普立茲新聞攝影獎80年展門票
+                                    </h5>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p class="card-text text-end fs-6"><span>TWD</span>280</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-card mb-3 me-2 col-12 col-md-6 col-xl-4 p-0 mx-md-0 p-2">
+                    <div class="row g-0 h-100 overflow-hidden align-items-center">
+                        <div class="col-4">
+                            <img src="https://picsum.photos/300/200/?random=10" class="rounded-start align-top w-100 h-100" alt="離島涼爽一下">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <div class="title-group d-flex justify-content-between">
+                                    <h5 class="card-title align-items-center">
+                                        <i class="fa-solid fa-bolt-lightning"></i>
+                                        【預售74折】台北展覽|普立茲新聞攝影獎80年展門票
+                                    </h5>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p class="card-text text-end fs-6"><span>TWD</span>299</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-card mb-3 me-2 col-12 col-md-6 col-xl-4 p-0 mx-md-0 p-2">
+                    <div class="row g-0 h-100 overflow-hidden align-items-center">
+                        <div class="col-4">
+                            <img src="https://picsum.photos/300/200/?random=10" class="rounded-start align-top w-100 h-100" alt="離島涼爽一下">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <div class="title-group d-flex justify-content-between">
+                                    <h5 class="card-title align-items-center">
+                                        <i class="fa-solid fa-bolt-lightning"></i>
+                                        【預售74折】台北展覽|普立茲新聞攝影獎80年展門票
+                                    </h5>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p class="card-text text-end fs-6"><span>TWD</span>299</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="afterward rounded-circle bg-secondary bg-opacity-50 text-center my-auto position-absolute">
+                <i class="fa fas fa-angle-right text-black fs-3 lh-1"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top 10 熱門產品 -->
+    <section class="hot-product-limit w-100 py-5 position-relative">
+        <div class="hot-product fixed-width m-auto px-sm-2 px-md-3 d-flex flex-wrap">
+            <h3 class="hot-product-title w-100 mb-4 mx-2">TOP 10 熱門產品</h3>
+            <div class="forward rounded-circle bg-secondary bg-opacity-50 text-center my-auto d-none position-absolute">
+                <i class="fa-solid fa-angle-left text-black fs-3 lh-1"></i>
+            </div>
+            <div class="group-card d-flex overflow-hidden">
+                <div class="hot-product-card fixed-card mx-2">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <span class="orderby position-absolute text-white py-1 px-2 rounded">TOP1</span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden mb-1">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="hot-product-card fixed-card mx-2">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <span class="orderby position-absolute text-white py-1 px-2 rounded">TOP1</span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="hot-product-card fixed-card mx-2">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <span class="orderby position-absolute text-white py-1 px-2 rounded">TOP1</span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="hot-product-card fixed-card mx-2">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <span class="orderby position-absolute text-white py-1 px-2 rounded">TOP1</span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="afterward rounded-circle bg-secondary bg-opacity-50 text-center my-auto position-absolute">
+                <i class="fa fas fa-angle-right text-black fs-3 lh-1"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 為你精選 -->
+    <section class="foryou-limit w-100 py-5 position-relative">
+        <div class="foryou fixed-width m-auto px-sm-2 px-md-3 d-flex flex-wrap">
+            <h3 class="foryou-title w-100 mb-4 mx-2">為你精選門票、台北、台南相關行程</h3>
+            <div class="forward rounded-circle bg-secondary bg-opacity-50 text-center my-auto d-none position-absolute">
+                <i class="fa-solid fa-angle-left text-black fs-3 lh-1"></i>
+            </div>
+            <div class="group-card d-flex flex-nowrap">
+                <div class="foryou-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="foryou-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="foryou-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="foryou-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="afterward rounded-circle bg-secondary bg-opacity-50 text-center my-auto position-absolute">
+                <i class="fa fas fa-angle-right text-black fs-3 lh-1"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 端午節 -->
+    <section class="DBF-limit w-100 py-5 position-relative">
+        <div class="DBF fixed-width m-auto px-sm-2 px-md-3 d-flex flex-wrap">
+            <h3 class="DBF-title w-100 mb-4 mx-2">端午連假玩樂園🎡滿$600折$50🔥</h3>
+            <div class="forward rounded-circle bg-secondary bg-opacity-50 text-center my-auto d-none position-absolute">
+                <i class="fa-solid fa-angle-left text-black fs-3 lh-1"></i>
+            </div>
+            <div class="group-card d-flex flex-nowrap">
+                <div class="DBF-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="DBF-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="DBF-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="DBF-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="afterward rounded-circle bg-secondary bg-opacity-50 text-center my-auto position-absolute">
+                <i class="fa fas fa-angle-right text-black fs-3 lh-1"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 限時優惠 -->
+    <section class="Timelimit-limit w-100 py-5 position-relative">
+        <div class="Timelimit fixed-width m-auto px-sm-2 px-md-3 d-flex flex-wrap">
+            <h3 class="Timelimit-title w-100 mb-4 mx-2">限時優惠必買清單✔✔立刻下訂🔥🔥
+            </h3>
+            <div class="forward rounded-circle bg-secondary bg-opacity-50 text-center my-auto d-none position-absolute">
+                <i class="fa-solid fa-angle-left text-black fs-3 lh-1"></i>
+            </div>
+            <div class="group-card d-flex flex-nowrap">
+                <div class="Timelimit-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Timelimit-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Timelimit-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="Timelimit-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="afterward rounded-circle bg-secondary bg-opacity-50 text-center my-auto position-absolute">
+                <i class="fa fas fa-angle-right text-black fs-3 lh-1"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 景點 -->
+    <section class="view-limit w-100 py-5 position-relative">
+        <div class="view fixed-width m-auto px-sm-2 px-md-3 d-flex flex-wrap">
+            <h3 class="view-title w-100 mb-4 mx-2">🙋🏻‍♀️ 在尋找景點門票的相關商品嗎？ 👇👇</h3>
+            <div class="forward rounded-circle bg-secondary bg-opacity-50 text-center my-auto d-none position-absolute">
+                <i class="fa-solid fa-angle-left text-black fs-3 lh-1"></i>
+            </div>
+            <div class="group-card d-flex flex-nowrap">
+                <div class="view-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="view-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="view-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="view-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="afterward rounded-circle bg-secondary bg-opacity-50 text-center my-auto position-absolute">
+                <i class="fa fas fa-angle-right text-black fs-3 lh-1"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 旅遊 -->
+    <section class="travel-limit w-100 py-5 position-relative">
+        <div class="travel fixed-width m-auto px-sm-2 px-md-3 d-flex flex-wrap">
+            <h3 class="travel-title w-100 mb-4 mx-2">夏日出遊☀️行程體驗 6 折起🤩</h3>
+            <div class="forward rounded-circle bg-secondary bg-opacity-50 text-center my-auto d-none position-absolute">
+                <i class="fa-solid fa-angle-left text-black fs-3 lh-1"></i>
+            </div>
+            <div class="group-card d-flex flex-nowrap">
+                <div class="travel-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="travel-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="travel-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="travel-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="afterward rounded-circle bg-secondary bg-opacity-50 text-center my-auto position-absolute">
+                <i class="fa fas fa-angle-right text-black fs-3 lh-1"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 展覽 -->
+    <section class="exhibition-limit w-100 py-5 position-relative">
+        <div class="exhibition fixed-width m-auto px-sm-2 px-md-3 d-flex flex-wrap">
+            <h3 class="exhibition-title w-100 mb-4 mx-2">2022必看展覽懶人包🙌指定商品滿500現折50⚡</h3>
+            <div class="forward rounded-circle bg-secondary bg-opacity-50 text-center my-auto d-none position-absolute">
+                <i class="fa-solid fa-angle-left text-black fs-3 lh-1"></i>
+            </div>
+            <div class="group-card d-flex flex-nowrap">
+                <div class="exhibition-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="exhibition-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="exhibition-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="exhibition-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="afterward rounded-circle bg-secondary bg-opacity-50 text-center my-auto position-absolute">
+                <i class="fa fas fa-angle-right text-black fs-3 lh-1"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 老爺旅館 -->
+    <section class="master-limit w-100 py-5 position-relative">
+        <div class="master fixed-width m-auto px-sm-2 px-md-3 d-flex flex-wrap">
+            <h3 class="master-title w-100 mb-4 mx-2">”老爺式旅行“ 工作倦怠診療室 💁‍♀️下訂再抽老爺住宿一晚＆千元旅遊金💰</h3>
+            <div class="forward rounded-circle bg-secondary bg-opacity-50 text-center my-auto d-none position-absolute">
+                <i class="fa-solid fa-angle-left text-black fs-3 lh-1"></i>
+            </div>
+            <div class="group-card d-flex flex-nowrap">
+                <div class="master-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="master-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="master-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="master-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="afterward rounded-circle bg-secondary bg-opacity-50 text-center my-auto position-absolute">
+                <i class="fa fas fa-angle-right text-black fs-3 lh-1"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 桃園 -->
+    <section class="taoyuan-limit w-100 py-5 position-relative">
+        <div class="taoyuan fixed-width m-auto px-sm-2 px-md-3 d-flex flex-wrap">
+            <h3 class="taoyuan-title w-100 mb-4 mx-2">桃園All好遊📣結帳輸入【TYALLFUN】現折$200🔥</h3>
+            <div class="forward rounded-circle bg-secondary bg-opacity-50 text-center my-auto d-none position-absolute">
+                <i class="fa-solid fa-angle-left text-black fs-3 lh-1"></i>
+            </div>
+            <div class="group-card d-flex flex-nowrap">
+                <div class="taoyuan-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="taoyuan-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="taoyuan-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="taoyuan-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="afterward rounded-circle bg-secondary bg-opacity-50 text-center my-auto position-absolute">
+                <i class="fa fas fa-angle-right text-black fs-3 lh-1"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 好評 -->
+    <section class="praise-limit w-100 py-5 position-relative">
+        <div class="praise fixed-width m-auto px-sm-2 px-md-3 d-flex flex-wrap">
+            <h3 class="praise-title w-100 mb-4 mx-2">🚀 虎哩放心 🚀 跟著評鑑優良夥伴出遊趣 🚗</h3>
+            <div class="forward rounded-circle bg-secondary bg-opacity-50 text-center my-auto d-none position-absolute">
+                <i class="fa-solid fa-angle-left text-black fs-3 lh-1"></i>
+            </div>
+            <div class="group-card d-flex flex-nowrap">
+                <div class="praise-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="praise-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="praise-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="praise-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="afterward rounded-circle bg-secondary bg-opacity-50 text-center my-auto position-absolute">
+                <i class="fa fas fa-angle-right text-black fs-3 lh-1"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 全球 -->
+    <section class="worldwide-limit w-100 py-5 position-relative">
+        <div class="worldwide fixed-width m-auto px-sm-2 px-md-3 d-flex flex-wrap">
+            <h3 class="worldwide-title w-100 mb-4 mx-2">全球樂園歡樂無限🎢</h3>
+            <div class="forward rounded-circle bg-secondary bg-opacity-50 text-center my-auto d-none position-absolute">
+                <i class="fa-solid fa-angle-left text-black fs-3 lh-1"></i>
+            </div>
+            <div class="group-card d-flex flex-nowrap">
+                <div class="worldwide-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="worldwide-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="worldwide-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="worldwide-card fixed-card mx-2 position-relative">
+                    <a href="#" class="text-decoration-none text-black">
+                        <div class="bundle position-relative overflow-hidden">
+                            <span class="location-tag position-absolute text-white"><i class="fa-solid fa-location-dot me-2"></i>新北市</span>
+                            <span class="heart position-absolute text-white"><i class="fa-regular fa-heart"></i></span>
+                            <img src="https://picsum.photos/300/170/?random=11" class="card-img-top rounded" alt="...">
+                        </div>
+                        <div class="card-body px-0">
+                            <h4 class="card-text overflow-hidden">【及買即用】台北兒童新樂園｜一日票（無限暢玩13項指定設施）</h4>
+                            <div class="card-tag mb-2 d-flex">
+                                <span title="即買即用" class="tag px-2 py-1 me-2 rounded">即買即用</span>
+                                <span title="出發前可免費取消" class="tag px-2 py-1 me-2 rounded">出發前可免費取消</span>
+                            </div>
+                            <div class="card-product-review mb-2 d-flex">
+                                <span class="px-1 border-end border-secondary">
+                                    <i class="fa-solid fa-star"></i>4.8 (2217)
+                                </span>
+                                <span class="px-1">
+                                    484K+個已訂購
+                                </span>
+                            </div>
+                            <div class="card-product-price d-flex">
+                                <span class="text-decoration-line-through  p-1">TWD 200</span>
+                                <span class="p-1">TWD<span class="fw-bolder">188</span></span>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="afterward rounded-circle bg-secondary bg-opacity-50 text-center my-auto position-absolute">
+                <i class="fa fas fa-angle-right text-black fs-3 lh-1"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 為何選擇 -->
+    <section class="choose-limit w-100 py-4">
+        <div class="choose fixed-width m-auto px-2 px-md-4 d-flex flex-wrap align-items-center">
+            <div class="reason mx-2 col-12 col-md-5">
+                <h5 class="mb-2 fs-5">為什麼選擇 Today ?</h5>
+                <p class="mb-5 fs-6 lh-base">你知道世界上有超過百萬名自由行旅客選擇 Today 作為旅遊規劃網站嗎？他們透過 Today 找到安全又安心的體驗行程！</p>
+                <a href="#" class="text-decoration-none text-white py-3 px-5 rounded">點我看更多</a>
+            </div>
+            <div class="travel-pic mx-2 col-12 col-md-6">
+                <img src="https://cdn.kkday.com/pc-web/assets/img/bg_whykkday.svg" class="w-100" alt="為何選擇 Today? why choose Today">
+            </div>
+        </div>
+    </section>
+
+    <!-- 其他選擇 -->
+    <section class="other-selection-limit w-100 px-2 py-5">
+        <div class="selection-group fixed-width m-auto px-2 px-md-4">
+            <div class="island mb-4 d-md-flex">
+                <div class="title-icon d-flex justify-content-between d-md-inline-block cursor-pointer">
+                    <h5 class="mb-2">離島旅遊懶人包</h5>
+                    <i class="fa-solid fa-angle-down d-md-none"></i>
+                </div>
+                <ul class="d-none d-md-flex flex-md-wrap">
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">澎湖</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">金門</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">馬祖</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">綠島</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">蘭嶼</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">小琉球</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">澎湖花火節</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="country mb-4 d-md-flex">
+                <div class="title-icon d-flex justify-content-between d-md-inline-block">
+                    <h5 class="mb-2">國內玩樂首選</h5>
+                    <i class="fa-solid fa-angle-down d-md-none"></i>
+                </div>
+                <ul class="d-none d-md-flex flex-wrap">
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">六福村</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">台北101</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">屏東海生館</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">九族文化村</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">麗寶樂園</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">十鼓仁糖文化園區</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">小人國</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">小叮噹科學主題樂園</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">花蓮遠雄海洋公園</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">綠世界生態農場</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">台東景點</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="transportation mb-4 d-md-flex">
+                <div class="title-icon d-flex justify-content-between d-md-inline-block">
+                    <h5 class="mb-2">旅遊交通輕鬆定</h5>
+                    <i class="fa-solid fa-angle-down d-md-none"></i>
+                </div>
+                <ul class="d-none d-md-flex flex-wrap">
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">租車預約</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">高鐵國旅聯票</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">立榮假期</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">包車旅遊</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">交通票卷</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="go-abroad mb-4 d-md-flex">
+                <div class="title-icon d-flex justify-content-between d-md-inline-block">
+                    <h5 class="mb-2">解封出國玩樂攻略</h5>
+                    <i class="fa-solid fa-angle-down d-md-none"></i>
+                </div>
+                <ul class="d-none d-md-flex flex-wrap">
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">東京自由行</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">大阪自由行</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">京都自由行</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">首爾自由行</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">釜山自由行</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">香港自由行</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">上海自由行</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">曼谷自由行</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">新加坡自由行</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">巴黎自由行</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">網卡</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">機場接送</a>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-1">
+                        <a href="#" class="text-decoration-none text-black-50">日本交通巴士</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-limit w-100 py-5">
+        <div class="book fixed-width m-auto w-75 pb-3 border-bottom">
+            <div class="info text-center">
+                <p class="mb-2 fs-6">即刻訂閱 ToDay EDM !</p>
+                <p class="mb-2">搶先獲得用戶限定優惠及最新熱門景點旅遊資訊!</p>
+                <div class="input-group w-75 m-auto mb-3">
+                    <input type="text" class="form-control" placeholder="請輸入 Email !" aria-label="Recipient's username" aria-describedby="book">
+                    <button class="btn btn-primary" type="button" id="book">訂閱</button>
+                </div>
+                <span>訂閱級代表你同意我們的使用者條款和隱私權保護政策</span>
+            </div>
+        </div>
+        <div class="footer-list fixed-width w-75 m-auto d-lg-flex flex-lg-wrap justify-content-lg-around py-4 border-bottom">
+            <span class="col-lg-3">
+                <div class="title-icon d-flex justify-content-between">
+                    <h6 class="mb-3">認識 ToDay</h6>
+                    <i class="fa-solid fa-angle-down d-lg-none"></i>
+                </div>
+                <ul class="d-none d-lg-block">
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">關於 ToDay</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">使用者條款</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">隱私權保護政策</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">常見問題與幫助</a></li>
+                    <li class="mb-5"><a href="#" class="text-decoration-none text-white">媒體報導</a></li>
+                </ul>
+            </span>
+            <span class="col-lg-3">
+                <div class="title-icon d-flex justify-content-between">
+                    <h6 class="mb-3">給旅人</h6>
+                    <i class="fa-solid fa-angle-down d-lg-none"></i>
+                </div>
+                <ul class="d-none d-lg-block">
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">三大保證</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">合作夥伴</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">官方部落格</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">ToDay Points介紹</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">會員好禮</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">兌換商品</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">ToDay Points兌換</a></li>
+                    <li class="mb-5"><a href="#" class="text-decoration-none text-white">賺取額外獎勵</a></li>
+                </ul>
+            </span>
+            <span class="col-lg-3">
+                <div class="title-icon d-flex justify-content-between">
+                    <h6 class="mb-3">ToDay 合作夥伴</h6>
+                    <i class="fa-solid fa-angle-down d-lg-none"></i>
+                </div>
+                <ul class="d-none d-lg-block">
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">駐站特派員</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">成為供應商</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">成為商城商家</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">供應商登入</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">同業合作</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">聯盟行銷</a></li>
+                    <li class="mb-1"><a href="#" class="text-decoration-none text-white">人才招募</a></li>
+                    <li class="mb-5"><a href="#" class="text-decoration-none text-white">部落客/攝影師合作計畫</a></li>
+                </ul>
+            </span>
+        </div>
+        <div class="contact fixed-width w-75 m-auto text-center py-4 border-bottom">
+            <div class="app mb-3">
+                <p class="mb-2">聯絡我們</p>
+                <span class="mb-4">
+                    <a href="#" class="text-decoration-none text-white rounded-circle d-inline-block"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-decoration-none text-white rounded-circle d-inline-block"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="text-decoration-none text-white rounded-circle d-inline-block"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-decoration-none text-white rounded-circle d-inline-block"><i class="fa-solid fa-bold"></i></a>
+                    <a href="#" class="text-decoration-none text-white rounded-circle d-inline-block"><i class="fa-brands fa-line"></i></a>
+                </span>
+            </div>
+            <div class="copyright">
+                &copy; 2022 ??
+            </div>
+        </div>
+        <div class="details fixed-width w-50 m-auto text-center py-4 d-md-flex flex-md-wrap text-md-start">
+            <p class="mb-2 col-12 col-md-6 col-lg-3">旅遊產品由 ??? 提供</p>
+            <p class="mb-2 col-12 col-md-6 col-lg-3">代表人：???</p>
+            <p class="mb-2 col-12 col-md-6 col-lg-3">統一編號：???</p>
+            <p class="mb-2 col-12 col-md-6 col-lg-3">旅行業註冊編號：???</p>
+            <p class="mb-2 col-12 col-md-6 col-lg-3">品保協會會員編號：???</p>
+            <p class="mb-2 col-12 col-md-6 col-lg-3">其他產品由 ??? 提供</p>
+            <p class="mb-2 col-12 col-md-6 col-lg-3">統一編號：???</p>
+            <p class="mb-2 col-12 col-md-6 col-lg-3">聯絡地址：???</p>
+            <p class="mb-2 col-12 col-md-6 col-lg-3">聯絡電話：???</p>
+            <p class="mb-2 col-12 col-md-6 col-lg-3">傳真 ???</p>
+            <p class="mb-2 col-12 col-md-6 col-lg-3">E-mail：???</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- <script src="./homescript.js"></script> -->
+</body>
+</html>
