@@ -1,4 +1,4 @@
-const url = "https://raw.githubusercontent.com/yu1129/data_respository/main/Hw6_ipadAir.json";
+const url = "https://raw.githubusercontent.com/yu1129/data_respository/main/Hw6_ipadAir.json?token=GHSAT0AAAAAACCMVQSSPTGEF6CKR7HJQBIOZCZXIZQ";
 
 let xhr = new XMLHttpRequest();
 let ipadArray;
