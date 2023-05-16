@@ -6,7 +6,7 @@
 - [Bootstrap](https://yu1129.github.io/html/Hw5_Bootstrap.html)
 
 # JavaScript
-- [Information]()
+- [Information](https://yu1129.github.io/JavaScript/Hw1_Information/)
 - [Pokemon](https://yu1129.github.io/JavaScript/Hw2_Pokemon.html)
 - [LoL](https://yu1129.github.io/JavaScript/Hw4_LoL.html)
 - [MarketingShare](https://yu1129.github.io/JavaScript/Hw4_MarketingShare.html)
