@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "65c5142d-d62f-44b0-8d62-1ada000d00ec": {
+      "ProjectGuid": "65c5142d-d62f-44b0-8d62-1ada000d00ec",
+      "DisplayName": "20220124",
+      "ColorIndex": 0
+    },
+    "0e54875c-e3d0-425b-8bbf-39b735b9f155": {
+      "ProjectGuid": "0e54875c-e3d0-425b-8bbf-39b735b9f155",
+      "DisplayName": "20220126",
+      "ColorIndex": 1
+    },
+    "f0b0b8ab-1f94-4d91-9159-743373a1d741": {
+      "ProjectGuid": "f0b0b8ab-1f94-4d91-9159-743373a1d741",
+      "DisplayName": "20220119",
+      "ColorIndex": 2
+    },
+    "0f68516c-d0ce-4ae2-a4b8-a0e33e3fa86a": {
+      "ProjectGuid": "0f68516c-d0ce-4ae2-a4b8-a0e33e3fa86a",
+      "DisplayName": "20220209",
+      "ColorIndex": 3
+    },
+    "875a2666-58f2-41ef-8294-9669f4249604": {
+      "ProjectGuid": "875a2666-58f2-41ef-8294-9669f4249604",
+      "DisplayName": "Candshop",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

@@ -1,0 +1,16 @@
+C:\Users\v2013\Desktop\黑客\作業\homework\20220126\bin\Debug\20220126.exe.config
+C:\Users\v2013\Desktop\黑客\作業\homework\20220126\bin\Debug\20220126.exe
+C:\Users\v2013\Desktop\黑客\作業\homework\20220126\bin\Debug\20220126.pdb
+C:\Users\v2013\Desktop\黑客\作業\homework\20220126\obj\Debug\20220126.csproj.AssemblyReference.cache
+C:\Users\v2013\Desktop\黑客\作業\homework\20220126\obj\Debug\20220126.csproj.SuggestedBindingRedirects.cache
+C:\Users\v2013\Desktop\黑客\作業\homework\20220126\obj\Debug\20220126.csproj.CoreCompileInputs.cache
+C:\Users\v2013\Desktop\黑客\作業\homework\20220126\obj\Debug\20220126.exe
+C:\Users\v2013\Desktop\黑客\作業\homework\20220126\obj\Debug\20220126.pdb
+C:\Users\v2013\Desktop\黑客\homework\20220126\bin\Debug\20220126.exe.config
+C:\Users\v2013\Desktop\黑客\homework\20220126\bin\Debug\20220126.exe
+C:\Users\v2013\Desktop\黑客\homework\20220126\bin\Debug\20220126.pdb
+C:\Users\v2013\Desktop\黑客\homework\20220126\obj\Debug\20220126.csproj.AssemblyReference.cache
+C:\Users\v2013\Desktop\黑客\homework\20220126\obj\Debug\20220126.csproj.SuggestedBindingRedirects.cache
+C:\Users\v2013\Desktop\黑客\homework\20220126\obj\Debug\20220126.csproj.CoreCompileInputs.cache
+C:\Users\v2013\Desktop\黑客\homework\20220126\obj\Debug\20220126.exe
+C:\Users\v2013\Desktop\黑客\homework\20220126\obj\Debug\20220126.pdb

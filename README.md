@@ -1,36 +1,36 @@
 # HTML
 - [Curriculum](https://yu1129.github.io/html/Hw1_Curriculum.html)
-- [ShopLine](https://yu1129.github.io/html/Hw2_ShopLine.html)
+    - 使用技術 :
+        - 使用 table 相關 `HTML Tags屬性`，刻出常見課表
 - [Toyota_1](https://yu1129.github.io/html/Hw3_Toyota_1.html)、[Toyota_2](https://yu1129.github.io/html/Hw3_Toyota_2.html)
+    - 使用技術 :
+        - 用 `SCSS` 撰寫階層樣式表
+        - 用 `position`、`margin` 或 `Grid Layout` 快速編排頁面
 - [ShopLine](https://yu1129.github.io/html/Hw4_ShopLine.html)
+    - 使用技術 :
+        - 使用 `@media 媒體查詢`實現 `RWD 響應是網頁` 
 - [Bootstrap](https://yu1129.github.io/html/Hw5_Bootstrap.html)
+    - 使用技術 :
+        - 使用 `Bootstrap 的 Grid System` 快速編排頁面，使 CSS 更乾淨簡潔
 
 # JavaScript
-- [Information](https://yu1129.github.io/JavaScript/Hw1_Information/)
 - [Pokemon](https://yu1129.github.io/JavaScript/Hw2_Pokemon.html)
-- [LoL](https://yu1129.github.io/JavaScript/Hw4_LoL.html)
-- [MarketingShare](https://yu1129.github.io/JavaScript/Hw4_MarketingShare.html)
-- [Calculter_1](https://yu1129.github.io/JavaScript/Hw5_Calculter_1.html)、[Calculter_2](https://yu1129.github.io/JavaScript/Hw5_Calculter_2.html)
-- [HowmanyAandB](https://yu1129.github.io/JavaScript/Hw5_HowmanyAandB.html)
-- [Ultimatepassword](https://yu1129.github.io/JavaScript/Hw5_Ultimatepassword.html)
+    - 使用技術 :
+        - 使用 `onclick` 事件監聽，簡單又快速的綁定事件
+        - 使用 `window.onload` 確保 DOM 以載入完成
+- [Calculter_1](https://yu1129.github.io/JavaScript/Hw5_Calculter_1.html)、[Calculter_2](https://yu1129.github.io/JavaScript/Hw5_Calculter_2.html)、[HowmanyAandB](https://yu1129.github.io/JavaScript/Hw5_HowmanyAandB.html)、[Ultimatepassword](https://yu1129.github.io/JavaScript/Hw5_Ultimatepassword.html)
+    - 使用技術 :
+        - 使用 JavaScript **動態生成** HTML 元素
+        - 使用 `CSS class names` 來設定樣式
+        - 使用 `addEventListener()` 事件監聽，使得更彈性和強大的事件處理方式
 - [iPadAir](https://yu1129.github.io/JavaScript/Hw6_iPadAir.html)
+    - 使用技術 :
+        - 使用 JavaScript **動態生成**
+        - 設計 JSON 資料
+        - 使用 `xhr` 抓取 JSON 資料
 - [LoL](https://yu1129.github.io/JavaScript/Hw7_LoL.html)
-# h1
-## h2
-### h3
-+ 
-- 
-* 
-1. 
-**粗體**
-*斜體*
-_斜體_
-~~刪除線~~
-`0022`
-[我的 GitHub 首頁](https://yu1129.github.io/)
-___
-```css
-div{
-    width: 100px;
-}
-`0`
+    - 使用技術 : 
+        - 以 `Template模板` 設計 HTML 結構
+        - JavaScript **動態生成**卡片
+        - 套用 `Bootstrap Modal` 顯示角色資訊
+        - 使用 `xhr` 抓取角色的 JSON 資料

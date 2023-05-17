@@ -1,0 +1,8 @@
+D:\Build School\C#\homework\20220505\bin\Debug\20220505.exe.config
+D:\Build School\C#\homework\20220505\bin\Debug\20220505.exe
+D:\Build School\C#\homework\20220505\bin\Debug\20220505.pdb
+D:\Build School\C#\homework\20220505\obj\Debug\20220505.csproj.AssemblyReference.cache
+D:\Build School\C#\homework\20220505\obj\Debug\20220505.csproj.SuggestedBindingRedirects.cache
+D:\Build School\C#\homework\20220505\obj\Debug\20220505.csproj.CoreCompileInputs.cache
+D:\Build School\C#\homework\20220505\obj\Debug\20220505.exe
+D:\Build School\C#\homework\20220505\obj\Debug\20220505.pdb

@@ -1,0 +1,16 @@
+C:\Users\v2013\Desktop\黑客\homework\20220119\bin\Debug\20220119.exe.config
+C:\Users\v2013\Desktop\黑客\homework\20220119\bin\Debug\20220119.exe
+C:\Users\v2013\Desktop\黑客\homework\20220119\bin\Debug\20220119.pdb
+C:\Users\v2013\Desktop\黑客\homework\20220119\obj\Debug\20220119.csproj.AssemblyReference.cache
+C:\Users\v2013\Desktop\黑客\homework\20220119\obj\Debug\20220119.csproj.SuggestedBindingRedirects.cache
+C:\Users\v2013\Desktop\黑客\homework\20220119\obj\Debug\20220119.csproj.CoreCompileInputs.cache
+C:\Users\v2013\Desktop\黑客\homework\20220119\obj\Debug\20220119.exe
+C:\Users\v2013\Desktop\黑客\homework\20220119\obj\Debug\20220119.pdb
+D:\Build School\C#\homework\20220119\bin\Debug\20220119.exe.config
+D:\Build School\C#\homework\20220119\bin\Debug\20220119.exe
+D:\Build School\C#\homework\20220119\bin\Debug\20220119.pdb
+D:\Build School\C#\homework\20220119\obj\Debug\20220119.csproj.AssemblyReference.cache
+D:\Build School\C#\homework\20220119\obj\Debug\20220119.csproj.SuggestedBindingRedirects.cache
+D:\Build School\C#\homework\20220119\obj\Debug\20220119.csproj.CoreCompileInputs.cache
+D:\Build School\C#\homework\20220119\obj\Debug\20220119.exe
+D:\Build School\C#\homework\20220119\obj\Debug\20220119.pdb

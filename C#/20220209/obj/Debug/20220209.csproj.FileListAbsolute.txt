@@ -1,0 +1,8 @@
+C:\Users\v2013\Desktop\黑客\homework\20220209\bin\Debug\20220209.exe.config
+C:\Users\v2013\Desktop\黑客\homework\20220209\bin\Debug\20220209.exe
+C:\Users\v2013\Desktop\黑客\homework\20220209\bin\Debug\20220209.pdb
+C:\Users\v2013\Desktop\黑客\homework\20220209\obj\Debug\20220209.csproj.AssemblyReference.cache
+C:\Users\v2013\Desktop\黑客\homework\20220209\obj\Debug\20220209.csproj.SuggestedBindingRedirects.cache
+C:\Users\v2013\Desktop\黑客\homework\20220209\obj\Debug\20220209.csproj.CoreCompileInputs.cache
+C:\Users\v2013\Desktop\黑客\homework\20220209\obj\Debug\20220209.exe
+C:\Users\v2013\Desktop\黑客\homework\20220209\obj\Debug\20220209.pdb
