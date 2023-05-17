@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        {{ isTrue }}
+        <input type="checkbox" :checked="isTrue">
+        <button v-on:click="change">切換</button>
+        <br>
+        <!-- isTrue == true 下方圖片才顯示 -->
+        <img v-if="isTrue" src="https://picsum.photos/300/200/?random=10">
+
+        <br>
+        <!-- TODO: 1. 取得 input value -->
+        <!-- TODO: 2. button 功能 -> 把 input value 塞到 ul 裡面 -->
+        <!-- TODO: 3. 計算的功能 -->
+        <!-- TODO: 4. 儲存 li 的資料 -->
+
+        <!-- 輸入: v-model -->
+        <input type="text" v-model="numInput">
+        <!-- 點擊確認後 將input value 推到下方li -->
+        <button v-on:click="confirmBtn">確認</button>
+        <ul v-for="num in numArr">
+            <li>{{num}}</li>
+        </ul>
+        <!-- 計算上方li加總: computed -->
+        <p>{{numTotal}}</p>
+        <p>{{aaa}}</p>
+        <p>{{newNumInput}}</p>
+    </div>
+
+    <!-- 1. script -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.7/dist/vue.js"></script>
+    <!-- 2. new Vue instance -->
+    <script>
+        const app = new Vue({
+            // 3. 掛在 #app 下
+            el: '#app',
+            // 4. 聲明資料
+            data: {
+                isTrue: true,
+                numInput: '',
+                numArr: []
+            },
+            // 5. 方法
+            methods: {
+                change() {
+                    // click isTrue ture -> false
+                    // click isTrue false -> true
+                    this.isTrue = !this.isTrue
+                },
+                confirmBtn(){
+                    this.numArr.push(this.numInput)
+                    this.numInput = ''
+                }
+            },
+            computed: {
+                numTotal(){
+                    return this.numArr.reduce((prev, curr) => prev + parseInt(curr), 0)
+                },
+                aaa(){
+                    return this.isTrue ? "確定" : "否定"
+                },
+                newNumInput(){
+                    return `CHU ${this.numInput / 2} CHU`
+                }
+            },
+            watch: {
+                isTrue: {
+                    handler(){
+                        console.log(new Date())
+                    }
+                },
+                numInput: {
+                    handler(){
+                        console.log(`${new Date()}: ${this.numInput}`)
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

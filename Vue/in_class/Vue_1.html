@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" id="input1">
+    <p id="p1"></p>
+    <h1 id="h1"></h1>
+    <h2 id="h2"></h2> -->
+
+    <div id="app">
+        {{title}}
+        {{number+22}}
+        {{isTrue = false}}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.7/dist/vue.js"></script>
+    <script>
+      // #region 
+      // Vue
+      // Vue 前端框架
+      // JS
+      // 框架: 是為了解決特定情況
+      // React, Angular, Vue -> 前端框架
+    
+      // Vue
+      // 漸進式框架
+      // 兩個重點:
+      // 1. 聲明式渲染 vs 指令式渲染
+      // 2. 元件系統 -> netcore: partialView, viewComponent
+      // MVVM -> Model-ViewModel-View
+      // #endregion 
+
+      // 指令式渲染
+      // input 有變動 p 跟著更新
+        // document.querySelector('#input1').addEventListener('input', function (event) {
+        //     document.querySelector('#p1').innerText = event.target.value
+        //     document.querySelector('#h1').innerText = event.target.value
+        //     document.querySelector('#h2').innerText = event.target.value
+        // })
+
+        // VKue: 聲明式渲染
+        const app = new Vue({
+            // 掛載位置
+            el: '#app',
+            // 資料,state
+            data:{
+                title:'Build School Vue',
+                number: 32,
+                isTrue: true
+            }
+        })
+    </script>
+</body>
+</html>
+

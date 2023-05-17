@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Code_First_MoveOut_DataModel.props" />
+</Project>

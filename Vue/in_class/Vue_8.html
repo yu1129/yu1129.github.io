@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input b-bind:type="inputType" v-model="inputVal">
+        <button v-on:click="changeType">查看密碼</button>
+
+        <img v-bind:src="imgSrc">
+        <input type="test" v-model="imgAlt">
+
+        <a :href="link">{{link}}</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.7/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                inputVal: '',
+                inputType: 'text',
+                imgSrc: 'https://picsum.photos/300/200/?random=10',
+                imgAlt: '',
+                link: 'https://manuals.plus/zh-TW/%E5%AE%89%E6%81%AF%E6%97%A5/sabbat-x12%E8%B6%85%E7%B4%9A%E6%89%8B%E5%86%8A'
+            },
+            methods: {
+                changeType(){
+                    this.inputType = this.inputType = 'text' ? 'password' : 'text'
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

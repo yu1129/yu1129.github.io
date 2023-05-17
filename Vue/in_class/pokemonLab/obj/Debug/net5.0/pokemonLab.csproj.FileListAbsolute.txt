@@ -1,0 +1,183 @@
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\appsettings.json
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\global.json
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\pokemonLab.exe
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\pokemonLab.deps.json
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\pokemonLab.runtimeconfig.json
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\pokemonLab.runtimeconfig.dev.json
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\pokemonLab.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\pokemonLab.pdb
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Humanizer.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Microsoft.OpenApi.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Newtonsoft.Json.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\System.Runtime.Caching.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+\\Mac\Home\Downloads\pokemonLab-master\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\pokemonLab.csproj.AssemblyReference.cache
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\pokemonLab.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\pokemonLab.AssemblyInfoInputs.cache
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\pokemonLab.AssemblyInfo.cs
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\pokemonLab.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\pokemonLab.MvcApplicationPartsAssemblyInfo.cs
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\pokemonLab.MvcApplicationPartsAssemblyInfo.cache
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\staticwebassets\pokemonLab.StaticWebAssets.Manifest.cache
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\staticwebassets\pokemonLab.StaticWebAssets.xml
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\scopedcss\bundle\pokemonLab.styles.css
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\pokemonLab.RazorTargetAssemblyInfo.cache
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\pokemonLab.csproj.CopyComplete
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\pokemonLab.dll
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\refint\pokemonLab.dll
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\pokemonLab.pdb
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\pokemonLab.genruntimeconfig.cache
+\\Mac\Home\Downloads\pokemonLab-master\obj\Debug\net5.0\ref\pokemonLab.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\appsettings.json
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\global.json
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\pokemonLab.exe
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\pokemonLab.deps.json
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\pokemonLab.runtimeconfig.json
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\pokemonLab.runtimeconfig.dev.json
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\pokemonLab.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\pokemonLab.pdb
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Humanizer.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.csproj.AssemblyReference.cache
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.AssemblyInfoInputs.cache
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.AssemblyInfo.cs
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.csproj.CoreCompileInputs.cache
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\staticwebassets\pokemonLab.StaticWebAssets.Manifest.cache
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\staticwebassets\pokemonLab.StaticWebAssets.xml
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\scopedcss\bundle\pokemonLab.styles.css
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.RazorTargetAssemblyInfo.cache
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.csproj.CopyComplete
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\refint\pokemonLab.dll
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.pdb
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.genruntimeconfig.cache
+C:\Users\二氧化硫\Downloads\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\ref\pokemonLab.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\appsettings.json
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\global.json
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\pokemonLab.exe
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\pokemonLab.deps.json
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\pokemonLab.runtimeconfig.json
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\pokemonLab.runtimeconfig.dev.json
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\pokemonLab.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\pokemonLab.pdb
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Humanizer.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.csproj.AssemblyReference.cache
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.GeneratedMSBuildEditorConfig.editorconfig
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.AssemblyInfoInputs.cache
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.AssemblyInfo.cs
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.csproj.CoreCompileInputs.cache
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.MvcApplicationPartsAssemblyInfo.cs
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.MvcApplicationPartsAssemblyInfo.cache
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\staticwebassets\pokemonLab.StaticWebAssets.Manifest.cache
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\staticwebassets\pokemonLab.StaticWebAssets.xml
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\scopedcss\bundle\pokemonLab.styles.css
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.RazorTargetAssemblyInfo.cache
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.csproj.CopyComplete
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\refint\pokemonLab.dll
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.pdb
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\pokemonLab.genruntimeconfig.cache
+D:\Build School\Vue\in_class\pokemonLab-master\pokemonLab-master\obj\Debug\net5.0\ref\pokemonLab.dll
