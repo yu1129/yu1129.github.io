@@ -9,3 +9,14 @@ D:\Build School\C#\homework\20220225\obj\Debug\20220225.csproj.GenerateResource.
 D:\Build School\C#\homework\20220225\obj\Debug\20220225.csproj.CoreCompileInputs.cache
 D:\Build School\C#\homework\20220225\obj\Debug\20220225.exe
 D:\Build School\C#\homework\20220225\obj\Debug\20220225.pdb
+D:\Version_Control\yu1129.github.io\C#\20220225\bin\Debug\20220225.exe.config
+D:\Version_Control\yu1129.github.io\C#\20220225\bin\Debug\20220225.exe
+D:\Version_Control\yu1129.github.io\C#\20220225\bin\Debug\20220225.pdb
+D:\Version_Control\yu1129.github.io\C#\20220225\obj\Debug\20220225.csproj.AssemblyReference.cache
+D:\Version_Control\yu1129.github.io\C#\20220225\obj\Debug\20220225.csproj.SuggestedBindingRedirects.cache
+D:\Version_Control\yu1129.github.io\C#\20220225\obj\Debug\_20220225.Form1.resources
+D:\Version_Control\yu1129.github.io\C#\20220225\obj\Debug\_20220225.Properties.Resources.resources
+D:\Version_Control\yu1129.github.io\C#\20220225\obj\Debug\20220225.csproj.GenerateResource.cache
+D:\Version_Control\yu1129.github.io\C#\20220225\obj\Debug\20220225.csproj.CoreCompileInputs.cache
+D:\Version_Control\yu1129.github.io\C#\20220225\obj\Debug\20220225.exe
+D:\Version_Control\yu1129.github.io\C#\20220225\obj\Debug\20220225.pdb

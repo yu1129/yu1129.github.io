@@ -1,0 +1,44 @@
+# Compiled files
+*.dll
+# - 這是編譯後的二進位檔案，因為它們可以透過原始碼重新建構。
+*.exe
+# - 類似地，這些執行檔也可以透過原始碼重新建構。
+*.pdb
+# - 這些是調試符號檔案，通常不需要包含在版本控制中。
+# Binaries/
+# - 這是編譯後的二進位檔案目錄，包含已經編譯過的程式碼和第三方元件，因為它們可以透過原始碼重新建構。
+
+# NuGet packages
+**/packages/
+
+# Build results
+**/**/bin/
+**/**/obj/
+# - 這是編譯期間產生的暫存檔案目錄，它們也可以透過原始碼重新建構。
+
+# Visual Studio files
+# **/.vs/
+# - 這是Visual Studio IDE生成的目錄，包含一些本機開發設定和工具。這些檔案不需要包含在版本控制中。
+# *.user
+# *.suo
+# *.cache
+# *.sln.docstates
+
+# Environment-based settings
+# appsettings.json
+# - 這是ASP.NET應用程序的配置檔案，通常包含敏感的應用程序設定，例如資料庫連接字串。這些設定應該保持私密，因此不應該被版本控制。
+# appsettings.Development.json
+# - 這是用於開發環境的配置檔案，也包含開發環境下的應用程序設定。類似於appsettings.json，它通常包含敏感設定，因此不應該被版本控制。
+
+# Logs
+# /logs/
+
+# Published application
+# /publish/
+
+# Shared folder
+# **/SharedFolder/
+# **/wwwroot/
+# - 這是ASP.NET應用程序的公開資源目錄，例如靜態檔案、圖像和樣式表。因為它們通常在部署時自動生成，所以不需要包含在版本控制中。
+# **/node_modules/
+# - 如果專案使用Node.js和npm進行前端開發，那麼這是用於保存第三方JavaScript和CSS庫的目錄。這些庫可以透過package.json重新安裝，因此不需要包含在版本控制中。

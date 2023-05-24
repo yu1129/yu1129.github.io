@@ -9,3 +9,14 @@ D:\Build School\C#\homework\20220505_2\obj\Debug\20220505_2.csproj.GenerateResou
 D:\Build School\C#\homework\20220505_2\obj\Debug\20220505_2.csproj.CoreCompileInputs.cache
 D:\Build School\C#\homework\20220505_2\obj\Debug\20220505_2.exe
 D:\Build School\C#\homework\20220505_2\obj\Debug\20220505_2.pdb
+D:\Version_Control\yu1129.github.io\C#\20220505_2\bin\Debug\20220505_2.exe.config
+D:\Version_Control\yu1129.github.io\C#\20220505_2\bin\Debug\20220505_2.exe
+D:\Version_Control\yu1129.github.io\C#\20220505_2\bin\Debug\20220505_2.pdb
+D:\Version_Control\yu1129.github.io\C#\20220505_2\obj\Debug\20220505_2.csproj.AssemblyReference.cache
+D:\Version_Control\yu1129.github.io\C#\20220505_2\obj\Debug\20220505_2.csproj.SuggestedBindingRedirects.cache
+D:\Version_Control\yu1129.github.io\C#\20220505_2\obj\Debug\_20220505_2.Form1.resources
+D:\Version_Control\yu1129.github.io\C#\20220505_2\obj\Debug\_20220505_2.Properties.Resources.resources
+D:\Version_Control\yu1129.github.io\C#\20220505_2\obj\Debug\20220505_2.csproj.GenerateResource.cache
+D:\Version_Control\yu1129.github.io\C#\20220505_2\obj\Debug\20220505_2.csproj.CoreCompileInputs.cache
+D:\Version_Control\yu1129.github.io\C#\20220505_2\obj\Debug\20220505_2.exe
+D:\Version_Control\yu1129.github.io\C#\20220505_2\obj\Debug\20220505_2.pdb
