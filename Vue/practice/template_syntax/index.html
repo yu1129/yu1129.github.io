@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <span>{{msg}}</span>
+        <span v-html="msg"></span>
+        <span :class="className"></span>
+        <br>
+        <div id="counter">{{count}}</div>
+        <button :disabled="btnStatus" @click="counter">btn1</button>
+        <button :class="btn_name" @click="change_btn1">Controller_btn1</button>
+    </div>
+
+    <div id="app2">
+        <p v-if="clickStatus">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae placeat ea incidunt illum porro amet maxime impedit alias earum praesentium, cum totam, blanditiis ducimus asperiores, magnam mollitia natus quibusdam quis!</p>
+        <div :id="result_block">{{clickStatus}}</div>
+        <button :class="btnName" @click="changeStatus">click</button>
+    </div>
+
+    <script type="module" src="./mustache.js"></script>
+</body>
+</html>
