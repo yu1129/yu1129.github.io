@@ -1,0 +1,17 @@
+--CREATE VIEW StationStatsData
+--AS
+--SELECT  r.TypeID, r.StationID, s.AvgStandTime, r.AvgSpeed, r.MaxSpeed
+--FROM     (SELECT  TypeID, StationID, ROUND(AVG(StandTime), 2) AS AvgStandTime
+--               FROM      dbo.StandTimeRecord
+--               GROUP BY TypeID, StationID) AS s RIGHT OUTER JOIN
+--                   (SELECT  TypeID, StationID, ROUND(AVG(Speed), 2) AS AvgSpeed, MAX(Speed) AS MaxSpeed
+--                   FROM     dbo.SpeedRecord
+--                   WHERE   (Speed <> 0)
+--                   GROUP BY TypeID, StationID) AS r ON s.TypeID = r.TypeID AND s.StationID = r.StationID;
+
+--CREATE VIEW RailStatsData
+--AS
+--SELECT  TypeID, RailNo, ROUND(AVG(Speed), 2) AS AvgSpeed, MAX(Speed) AS MaxSpeed
+--FROM     dbo.SpeedRecord
+--WHERE   (CAST(TimeStamp AS DATE) = CAST(GETDATE() AS DATE)) AND (Speed <> 0)
+--GROUP BY TypeID, RailNo;
