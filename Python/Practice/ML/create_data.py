@@ -2,9 +2,10 @@ import requests
 import os
 import pandas as pd
 import time
+import datetime
 
-api_url = ""
-api_key = ""
+api_url = "https://trainsmonitor.ntmetro.com.tw/ntmetroApi/liveData?lineId=V"
+api_key = "jhPkrAPxa5fH3Chfn4YNgIAQnVZILl2r18hKgmA"
 
 data_store_folder = "data_store"
 excel_file_path = os.path.join(data_store_folder, "route_data.xlsx")
@@ -24,6 +25,7 @@ while True:
 
         headers = {"ApiKey": api_key}
         response = requests.get(api_url, headers=headers, verify=False)
+        # , verify=False
 
         if response.status_code == 200:
             data = response.json()
@@ -40,6 +42,15 @@ while True:
 
         filtered_df = df[selected_columns]
         filtered_df = filtered_df[((filtered_df['StationId'] != 'V00') & (filtered_df['DestStationId'] != 'V00')) | ((filtered_df['DestStationId'] == filtered_df['StationId']) & (filtered_df['Speed'] != 0))]
+
+        filtered_df['Timestamp'] = pd.to_datetime('now')
+
+        today = datetime.date.today()
+        weekday = today.weekday()
+        if (weekday <= 4):
+            filtered_df['Weekday'] = "平日"
+        else:
+            filtered_df['Weekday'] = "假日"
 
         if first_iteration:
             filtered_df.to_excel(excel_file_path, index=False, sheet_name='Sheet1')
